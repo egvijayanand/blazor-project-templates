@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json.schemastore.org/template",
+    "author": "Vijay Anand E G",
+    "defaultName": "BlazorWinForms1",
+    "classifications": [
+        "Desktop",
+        "Blazor"
+    ],
+    "identity": "VijayAnand.WindowsForms.Blazor",
+    "description": "A project for hosting Blazor component in the desktop Windows Forms application",
+    "name": "Windows Forms desktop application with Blazor component (Preview 4)",
+    "shortName": "winforms-blazor",
+    "sourceName": "BlazorWinForms1",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    }
+}
