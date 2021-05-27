@@ -24,3 +24,7 @@ So, .NET CLI command to create a new project from your favorite terminal would b
 For WinForms: **dotnet new winforms-blazor**
 
 For WPF: **dotnet new wpf-blazor**
+
+To run the project, it does depend on the WebView2 runtime, which can be downloaded from here:
+
+https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section
