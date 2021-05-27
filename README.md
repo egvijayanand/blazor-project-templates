@@ -7,7 +7,7 @@ Currently, templates made available for working with _**Blazor components in des
 
 Clone (or Download) the repository to the local machine and run the batch files available to create and install the project templates into your local machine.
 
-Batch files are available within in each of the project directory (Create-Template.bat and Install-Template.bat).
+Batch files are available within in each of the project directory (_Create-Template.bat_ and _Install-Template.bat_).
 
 Under the hood, they make use of the .NET CLI commands and process the template specification file (\*.nuspec) to create the NuGet package.
 
