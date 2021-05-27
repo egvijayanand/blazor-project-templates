@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json.schemastore.org/template",
+    "author": "Vijay Anand E G",
+    "defaultName": "BlazorWpf1",
+    "classifications": [
+        "Desktop",
+        "Blazor"
+    ],
+    "identity": "VijayAnand.Wpf.Blazor",
+    "description": "A project for hosting Blazor component in the desktop WPF application",
+    "name": "WPF desktop application with Blazor component (Preview 4)",
+    "shortName": "wpf-blazor",
+    "sourceName": "BlazorWpf1",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    }
+}
