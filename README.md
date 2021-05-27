@@ -1,5 +1,6 @@
-# dotnet6-project-templates
-.NET 6 project templates
+# .NET 6 project templates
+
+## Blazor desktop project templates for Windows Forms and WPF
 
 Under the **src** directory, source for each project template is maintained in a separate directory.
 
@@ -9,7 +10,7 @@ Clone (or Download) the repository to the local machine and run the batch files 
 
 Batch files are available within in each of the project directory (_Create-Template.bat_ and _Install-Template.bat_).
 
-Under the hood, they make use of the .NET CLI commands and process the template specification file (\*.nuspec) to create the NuGet package.
+Under the hood, they make use of the .NET CLI commands and processes the specification to create the NuGet package.
 
 Then, this NuGet package can be installed as Project template and made use of.
 
