@@ -35,3 +35,13 @@ dotnet new wpf-blazor
 To run the project, it does depend on the WebView2 runtime, which can be downloaded from here:
 
 https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section
+
+### Templates within Visual Studio
+
+After installing the CLI template, optionally, it can be made available in the New Project dialog within Visual Studio 2019 (16.8+) for an integrated experience.
+
+Enable the option as shown in the below screenshot (Tools -> Options / Alt + T + O) and then restart the Visual Studio instance for this to take effect.
+
+![CLI Project Templates within Visual Studio 2019](https://github.com/egvijayanand/dotnet6-project-templates/blob/main/images/cli-templates-option-enable.png)
+
+Pro Tip: Search with the Blazor keyword to quickly locate the project template.
