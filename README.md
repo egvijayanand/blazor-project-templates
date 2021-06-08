@@ -42,6 +42,6 @@ After installing the CLI template, optionally, it can be made available in the N
 
 Enable the option as shown in the below screenshot (Tools -> Options / Alt + T + O) and then restart the Visual Studio instance for this to take effect.
 
-![CLI Project Templates within Visual Studio 2019](https://github.com/egvijayanand/dotnet6-project-templates/blob/main/images/cli-templates-option-enable.png)
+![CLI Project Templates within Visual Studio 2019](./images/cli-templates-option-enable.png)
 
 > Pro Tip: Search with the **Blazor** keyword to quickly locate the project template in VS.
