@@ -3,12 +3,13 @@
     "author": "Vijay Anand E G",
     "defaultName": "BlazorWinForms1",
     "classifications": [
+        "Windows",
         "Desktop",
         "Blazor"
     ],
     "identity": "VijayAnand.WindowsForms.Blazor",
     "description": "A project for hosting Blazor component in the Windows Forms desktop application",
-    "name": "Windows Forms with Blazor component (Preview 4)",
+    "name": "Windows Forms with Blazor component (.NET 6 Preview 5)",
     "shortName": "winforms-blazor",
     "sourceName": "BlazorWinForms1",
     "tags": {
