@@ -4,8 +4,8 @@
 
 | Version | App Model |
 | :-----: | :-------: |
-|![NuGet](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor)|[Windows Forms](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|
-|![NuGet](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor)|[WPF](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|
+|![NuGet](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/)|[Windows Forms](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|
+|![NuGet](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/)|[WPF](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|
 
 Under the **src** directory, source for each project template is maintained in a separate directory.
 
