@@ -16,6 +16,7 @@
 		<NoWarn>$(NoWarn);NU5128</NoWarn>
 		<RepositoryType>GitHub</RepositoryType>
 		<RepositoryUrl>https://github.com/egvijayanand/dotnet6-project-templates</RepositoryUrl>
+		<PackageTags>Desktop, WPF, Blazor, Windows</PackageTags>
 		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>

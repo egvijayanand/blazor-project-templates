@@ -6,6 +6,6 @@
 if exist .\bin\Debug\VijayAnand.WindowsForms.Blazor.1.0.1.nupkg del .\bin\Debug\VijayAnand.WindowsForms.Blazor.1.0.1.nupkg
 
 echo Creating project template ...
-dotnet pack .\VijayAnand.WindowsForms.Blazor.csproj
+dotnet pack .\VijayAnand.WindowsForms.Blazor.csproj -p:PackageVersion=1.0.1
 echo Process completed.
 pause
