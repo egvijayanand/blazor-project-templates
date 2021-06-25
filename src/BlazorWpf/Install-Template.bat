@@ -1,6 +1,6 @@
 :: Installs the NuGet package
 @echo off
 echo Installing the project template . . .
-dotnet new --install .\bin\Debug\VijayAnand.Wpf.Blazor.1.0.1.nupkg
+dotnet new --install .\bin\Debug\VijayAnand.Wpf.Blazor.1.0.2.nupkg
 echo Process completed
 pause
