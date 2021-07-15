@@ -1,1 +1,3 @@
-Included Tags for search and discovery in NuGet
+Project template updated with .NET 6 Preview 6 package dependencies.
+
+Note: From .NET 6 Preview 5 onwards, the target version of the WPF application has to be Windows 10 [Version 10.0.19041] (2004 / 20H1) for the BlazorWebView package to restore and compile.

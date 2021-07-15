@@ -37,6 +37,8 @@ dotnet new wpf-blazor
 
 To run the project, it does depend on the WebView2 runtime, which can be downloaded from here:
 
+This can also be installed with [Maui Check](https://github.com/Redth/dotnet-maui-check) tool
+
 https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section
 
 ### Templates within Visual Studio
