@@ -3,9 +3,9 @@
 @echo off
 
 @echo Deleting existing package
-if exist .\bin\Release\VijayAnand.Wpf.Blazor.1.0.3.nupkg del .\bin\Release\VijayAnand.Wpf.Blazor.1.0.3.nupkg
+if exist .\bin\Release\VijayAnand.Wpf.Blazor.1.0.4.nupkg del .\bin\Release\VijayAnand.Wpf.Blazor.1.0.4.nupkg
 
 echo Creating project template ...
-dotnet pack .\VijayAnand.Wpf.Blazor.csproj -p:PackageVersion=1.0.3
+dotnet pack .\VijayAnand.Wpf.Blazor.csproj -p:PackageVersion=1.0.4
 echo Process completed.
 pause

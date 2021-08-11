@@ -3,8 +3,8 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<PackageType>Template</PackageType>
 		<PackageId>VijayAnand.WindowsForms.Blazor</PackageId>
-		<PackageVersion>1.0.2</PackageVersion>
-		<Title>Windows Forms with Blazor component (.NET 6 Preview 6)</Title>
+		<PackageVersion>1.0.3</PackageVersion>
+		<Title>Windows Forms with Blazor component (.NET 6 Preview 7)</Title>
 		<Authors>Vijay Anand E G</Authors>
 		<Description>A project for hosting Blazor component in the Windows Forms desktop application.</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
