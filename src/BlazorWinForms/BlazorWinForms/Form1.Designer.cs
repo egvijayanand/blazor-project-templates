@@ -1,4 +1,4 @@
-﻿namespace BlazorWinForms1
+﻿namespace BlazorWinForms
 {
     partial class Form1
     {

@@ -5,9 +5,9 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using static BlazorWpf1.Startup;
+using static BlazorWpf.Startup;
 
-namespace BlazorWpf1
+namespace BlazorWpf
 {
     /// <summary>
     /// Interaction logic for App.xaml

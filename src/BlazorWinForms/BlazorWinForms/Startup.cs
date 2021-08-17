@@ -1,8 +1,8 @@
-using System;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
-namespace BlazorWinForms1
+namespace BlazorWinForms
 {
     public class Startup
     {

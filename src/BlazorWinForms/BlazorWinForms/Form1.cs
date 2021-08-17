@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Components.WebView.WindowsForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,9 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.AspNetCore.Components.WebView.WindowsForms;
 
-namespace BlazorWinForms1
+namespace BlazorWinForms
 {
     public partial class Form1 : Form
     {
@@ -24,7 +24,7 @@ namespace BlazorWinForms1
                 Services = Startup.Services
             };
 
-            blazor.RootComponents.Add<Counter>("#app");
+            blazor.RootComponents.Add<App>("#app");
             Controls.Add(blazor);
         }
 

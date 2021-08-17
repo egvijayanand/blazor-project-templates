@@ -1,4 +1,4 @@
-namespace BlazorWpf1
+namespace BlazorWinForms
 {
     public partial class Counter { }
 }
