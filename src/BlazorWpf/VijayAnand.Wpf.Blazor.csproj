@@ -4,7 +4,7 @@
 		<PackageType>Template</PackageType>
 		<PackageId>VijayAnand.Wpf.Blazor</PackageId>
 		<PackageVersion>1.0.4</PackageVersion>
-		<Title>WPF with Blazor component (.NET 6 Preview 7)</Title>
+		<Title>WPF App with Blazor component (.NET 6 Preview 7)</Title>
 		<Authors>Vijay Anand E G</Authors>
 		<Description>A project for hosting Blazor component in the WPF desktop application.</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -16,11 +16,11 @@
 		<NoWarn>$(NoWarn);NU5128</NoWarn>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/egvijayanand/dotnet6-project-templates</RepositoryUrl>
-		<PackageTags>Desktop, WPF, Blazor, Windows, Project Template</PackageTags>
+		<PackageTags>Desktop, WPF, Blazor, Windows, Project;Template</PackageTags>
 		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
-		<Content Include="BlazorWpf1\**\*" Exclude="BlazorWpf1\**\bin\**;BlazorWpf1\**\obj\**" />
+		<Content Include="BlazorWpf\**\*" Exclude="BlazorWpf\**\bin\**;BlazorWpf\**\obj\**" />
 		<Compile Remove="**\*" />
 	</ItemGroup>
 </Project>

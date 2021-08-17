@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BlazorWpf1
+namespace BlazorWpf
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

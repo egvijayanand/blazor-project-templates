@@ -16,11 +16,11 @@
 		<NoWarn>$(NoWarn);NU5128</NoWarn>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/egvijayanand/dotnet6-project-templates</RepositoryUrl>
-		<PackageTags>Desktop, WinForms, Blazor, Windows, Windows Forms, Project Template</PackageTags>
+		<PackageTags>Desktop, WinForms, Blazor, Windows, Windows;Forms, Project;Template</PackageTags>
 		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
-		<Content Include="BlazorWinForms1\**\*" Exclude="BlazorWinForms1\**\bin\**;BlazorWinForms1\**\obj\**" />
+		<Content Include="BlazorWinForms\**\*" Exclude="BlazorWinForms\**\bin\**;BlazorWinForms\**\obj\**" />
 		<Compile Remove="**\*" />
 	</ItemGroup>
 </Project>
