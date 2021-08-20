@@ -4,18 +4,29 @@
 
 | Version | App Model |
 | :-----: | :-------: |
+| [![NuGet Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/) | [Unified Template](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)|
 | [![NuGet Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/) | [Windows Forms](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|
 | [![NuGet Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/) | [WPF](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|
 
-Templates made available for working with _**Blazor components in desktop applications such as Windows Forms and WPF**_.
+Templates made available for working with **Blazor components in desktop applications such as Windows Forms and WPF**.
+
+Also available as a single unified template package.
 
 #### Commands to install the project template:
 
-```console
+Unified Template:
+
+```shell
+dotnet new --install VijayAnand.BlazorTemplates
+```
+
+Can also be installed separately.
+
+```shell
 dotnet new --install VijayAnand.WindowsForms.Blazor
 ```
 
-```console
+```shell
 dotnet new --install VijayAnand.Wpf.Blazor
 ```
 
@@ -27,11 +38,11 @@ WPF: **wpf-blazor**
 
 So, .NET CLI command to create a new project from your favorite terminal would be as follows:
 
-```console
+```shell
 dotnet new winforms-blazor
 ```
 
-```console
+```shell
 dotnet new wpf-blazor
 ```
 
