@@ -1,6 +1,6 @@
-# .NET 6 project templates
+## .NET 6 project templates
 
-## Blazor desktop project templates for Windows Forms and WPF
+### Blazor desktop project templates for Windows Forms and WPF
 
 | Version | App Model |
 | :-----: | :-------: |
@@ -52,7 +52,7 @@ This can also be installed with [Maui Check](https://github.com/Redth/dotnet-mau
 
 https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section
 
-### Templates within Visual Studio
+#### Templates within Visual Studio
 
 After installing the CLI template, optionally, it can be made available in the New Project dialog within Visual Studio 2019 (16.8+) for an integrated experience.
 
