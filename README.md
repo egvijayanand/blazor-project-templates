@@ -1,16 +1,16 @@
-## .NET 6 project templates
+## .NET 6 Project Templates
 
 ### Blazor desktop project templates for Windows Forms and WPF
 
 | Version | App Model |
 | :-----: | :-------: |
-| [![NuGet Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/) | [Unified Template](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)|
+| [![NuGet Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/) | [Unified Package](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)|
 | [![NuGet Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/) | [Windows Forms](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|
 | [![NuGet Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/) | [WPF](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|
 
 Templates made available for working with **Blazor components in desktop applications such as Windows Forms and WPF**.
 
-Also available as a single unified template package.
+Also available in an unified template package.
 
 #### Commands to install the project template:
 
@@ -54,9 +54,11 @@ https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section
 
 #### Templates within Visual Studio
 
-After installing the CLI template, optionally, it can be made available in the New Project dialog within Visual Studio 2019 (16.8+) for an integrated experience.
+After installing the CLI template, optionally, this can be made available in the `New Project` dialog within Visual Studio 2019 (ver. 16.8+) for an integrated experience.
 
 Enable the option as shown in the below screenshot (Tools -> Options / Alt + T + O) and then restart the Visual Studio instance for this to take effect.
+
+_And in case of Visual Studio 2022 (Preview 3.x or later), the option of listing the .NET CLI template within IDE is enabled by default._
 
 ![CLI Project Templates within Visual Studio 2019](./images/cli-templates-option-enable.png)
 
