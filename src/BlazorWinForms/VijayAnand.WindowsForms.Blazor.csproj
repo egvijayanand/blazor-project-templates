@@ -3,8 +3,8 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<PackageType>Template</PackageType>
 		<PackageId>VijayAnand.WindowsForms.Blazor</PackageId>
-		<PackageVersion>1.0.3</PackageVersion>
-		<Title>Windows Forms with Blazor component (.NET 6 Preview 7)</Title>
+		<PackageVersion>1.0.5</PackageVersion>
+		<Title>Windows Forms with Blazor component (.NET 6 RC1)</Title>
 		<Authors>Vijay Anand E G</Authors>
 		<Description>A project for hosting Blazor component in the Windows Forms desktop application.</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -18,9 +18,11 @@
 		<RepositoryUrl>https://github.com/egvijayanand/dotnet6-project-templates</RepositoryUrl>
 		<PackageTags>Desktop, WinForms, Blazor, Windows, Windows;Forms, Project;Template</PackageTags>
 		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
+		<PackageReadmeFile>overview.md</PackageReadmeFile>
 	</PropertyGroup>
 	<ItemGroup>
 		<Content Include="BlazorWinForms\**\*" Exclude="BlazorWinForms\**\bin\**;BlazorWinForms\**\obj\**" />
 		<Compile Remove="**\*" />
+		<None Include="overview.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 </Project>
