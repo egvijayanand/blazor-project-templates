@@ -20,6 +20,7 @@
 		<PackageTags>Blazor, Desktop, Windows, Windows;Forms, WinForms, WPF, Project;Template</PackageTags>
 		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
 		<PackageReadmeFile>overview.md</PackageReadmeFile>
+		<PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
 	</PropertyGroup>
 	<ItemGroup>
 		<Content Include="BlazorWinForms\**\*;BlazorWpf\**\*"

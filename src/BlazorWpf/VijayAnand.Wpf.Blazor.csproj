@@ -3,8 +3,8 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<PackageType>Template</PackageType>
 		<PackageId>VijayAnand.Wpf.Blazor</PackageId>
-		<PackageVersion>1.0.6</PackageVersion>
-		<Title>WPF App with Blazor component (.NET 6 RC1)</Title>
+		<PackageVersion>1.0.7</PackageVersion>
+		<Title>WPF App with Blazor component (.NET 6 RC 2)</Title>
 		<Authors>Vijay Anand E G</Authors>
 		<Description>A project for hosting Blazor component in the WPF desktop application.</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -19,6 +19,7 @@
 		<PackageTags>Desktop, WPF, Blazor, Windows, Project;Template</PackageTags>
 		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
 		<PackageReadmeFile>overview.md</PackageReadmeFile>
+		<PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
 	</PropertyGroup>
 	<ItemGroup>
 		<Content Include="BlazorWpf\**\*" Exclude="BlazorWpf\**\bin\**;BlazorWpf\**\obj\**" />

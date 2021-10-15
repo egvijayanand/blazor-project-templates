@@ -1,7 +1,7 @@
-What's new in ver. 1.0.1:
+What's new in ver. 1.0.2:
 
 Blazor desktop templates for Windows Forms and WPF.
 
-Currently targeting .NET 6 RC1.
+Currently targeting .NET 6 RC 2 / Preview 9 (of BlazorWebView).
 
 Templates have been named as winforms-blazor and wpf-blazor respectively.
