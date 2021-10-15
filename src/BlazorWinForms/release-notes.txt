@@ -1,5 +1,5 @@
-What's new ver 1.0.5:
+What's new ver 1.0.6:
 
-Project template updated to dependencies of .NET 6 RC1.
+Project template updated to dependencies of .NET 6 RC 2.
 
 Note: From .NET 6 Preview 5 onwards, the target version of the WinForms application has to be Windows 10 [Version 10.0.19041] (2004 / 20H1) for the BlazorWebView package to restore and compile.
