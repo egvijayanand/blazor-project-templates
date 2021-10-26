@@ -11,10 +11,10 @@ if "%packageVersion%"=="" (echo Version # not configured && goto end)
 echo Version #: %packageVersion%
 
 echo Deleting existing package
-if exist .\bin\Release\VijayAnand.WindowsForms.Blazor.%packageVersion%.nupkg del .\bin\Release\VijayAnand.WindowsForms.Blazor.%packageVersion%.nupkg
+if exist .\bin\Debug\VijayAnand.WindowsForms.Blazor.%packageVersion%.nupkg del .\bin\Debug\VijayAnand.WindowsForms.Blazor.%packageVersion%.nupkg
 
-echo Creating NuGet package . . .
-dotnet pack .\VijayAnand.WindowsForms.Blazor.csproj -c Release -p:PackageVersion=%packageVersion%
+echo Creating NuGet package ...
+dotnet pack .\VijayAnand.WindowsForms.Blazor.csproj -c Debug -p:PackageVersion=%packageVersion%
 echo Process completed
 
 :end

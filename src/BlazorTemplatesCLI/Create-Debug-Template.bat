@@ -9,10 +9,10 @@ if "%packageVersion%"=="" (echo Version # not configured && goto end)
 
 @echo Version #: %packageVersion%
 
-if exist .\bin\Release\VijayAnand.BlazorTemplates.%packageVersion%.nupkg del .\bin\Release\VijayAnand.BlazorTemplates.%packageVersion%.nupkg
+if exist .\bin\Debug\VijayAnand.BlazorTemplates.%packageVersion%.nupkg del .\bin\Debug\VijayAnand.BlazorTemplates.%packageVersion%.nupkg
 
-echo Creating NuGet package ...
-dotnet pack .\VijayAnand.BlazorTemplates.csproj -c Release -p:PackageVersion=%packageVersion%
+echo Creating NuGet package . . .
+dotnet pack .\VijayAnand.BlazorTemplates.csproj -c Debug -p:PackageVersion=%packageVersion%
 echo Process completed
 
 :end

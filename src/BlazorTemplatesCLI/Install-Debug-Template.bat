@@ -8,7 +8,7 @@ set /P packageVersion=<PackageVersion.txt
 if "%packageVersion%"=="" (echo Version # not configured && goto end)
 
 echo Installing the template ver. %packageVersion% . . .
-dotnet new --install .\bin\Release\VijayAnand.WindowsForms.Blazor.%packageVersion%.nupkg
+dotnet new --install .\bin\Debug\VijayAnand.BlazorTemplates.%packageVersion%.nupkg
 echo Process completed
 
 :end
