@@ -2,10 +2,20 @@
 ::nuget.exe pack VijayAnand.WindowsForms.Blazor.nuspec
 @echo off
 
-@echo Deleting existing package
-if exist .\bin\Release\VijayAnand.WindowsForms.Blazor.1.0.6.nupkg del .\bin\Release\VijayAnand.WindowsForms.Blazor.1.0.6.nupkg
+if not exist PackageVersion.txt (echo Version file not available && goto end)
 
-echo Creating project template package . . .
-dotnet pack .\VijayAnand.WindowsForms.Blazor.csproj -c Release -p:PackageVersion=1.0.6
-echo Process completed.
+set /P packageVersion=<PackageVersion.txt
+
+if "%packageVersion%"=="" (echo Version # not configured && goto end)
+
+echo Version #: %packageVersion%
+
+echo Deleting existing package
+if exist .\bin\Release\VijayAnand.WindowsForms.Blazor.%packageVersion%.nupkg del .\bin\Release\VijayAnand.WindowsForms.Blazor.%packageVersion%.nupkg
+
+echo Creating NuGet package . . .
+dotnet pack .\VijayAnand.WindowsForms.Blazor.csproj -c Release -p:PackageVersion=%packageVersion%
+echo Process completed
+
+:end
 pause
