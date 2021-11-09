@@ -4,7 +4,7 @@
 		<PackageType>Template</PackageType>
 		<PackageId>VijayAnand.Wpf.Blazor</PackageId>
 		<PackageVersion>1.0.7</PackageVersion>
-		<Title>WPF App with Blazor component (.NET 6 RC 2)</Title>
+		<Title>WPF App with Blazor component (.NET 6 / .NET MAUI Preview 10)</Title>
 		<Authors>Vijay Anand E G</Authors>
 		<Description>A project for hosting Blazor component in the WPF desktop application.</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
