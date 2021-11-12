@@ -1,7 +1,3 @@
-What's new in ver. 1.0.3:
+What's new in ver. 1.0.4:
 
-Blazor desktop templates for Windows Forms and WPF.
-
-Currently targeting .NET 6 / .NET MAUI Preview 10.
-
-Templates have been named as winforms-blazor and wpf-blazor respectively.
+Based on the BlazorWebView dependency, TargetFramework for the projects have been updated to net6.0-windows7.0, means that the desktop apps can run on Windows 7 or later.
