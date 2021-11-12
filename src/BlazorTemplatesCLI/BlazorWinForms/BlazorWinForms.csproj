@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net6.0-windows10.0.19041</TargetFramework>
+		<TargetFramework>net6.0-windows7.0</TargetFramework>
 		<UseWindowsForms>true</UseWindowsForms>
 		<RootNamespace>BlazorWinForms</RootNamespace>
 	</PropertyGroup>
