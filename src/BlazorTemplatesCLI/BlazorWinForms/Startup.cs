@@ -1,24 +1,22 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
 
-namespace BlazorWinForms
+namespace BlazorWinForms;
+
+public static class Startup
 {
-    public class Startup
+    public static IServiceProvider? Services { get; private set; }
+
+    public static void Init()
     {
-        public static IServiceProvider Services { get; private set; }
+        var host = Host.CreateDefaultBuilder()
+                       .ConfigureServices(WireupServices)
+                       .Build();
+        Services = host.Services;
+    }
 
-        public static void Init()
-        {
-            var host = Host.CreateDefaultBuilder()
-                           .ConfigureServices((c, x) => WireupServices(c, x))
-                           .Build();
-            Services = host.Services;
-        }
-
-        private static void WireupServices(HostBuilderContext context, IServiceCollection services)
-        {
-            services.AddBlazorWebView();
-        }
+    private static void WireupServices(HostBuilderContext context, IServiceCollection services)
+    {
+        services.AddBlazorWebView();
     }
 }
