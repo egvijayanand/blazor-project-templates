@@ -1,3 +1,9 @@
-What's new in ver. 1.0.4:
+What's new in ver. 1.0.5:
 
-Based on the BlazorWebView dependency, TargetFramework for the projects have been updated to net6.0-windows7.0, means that the desktop apps can run on Windows 7 or later.
+1. Templates have been updated with .NET 6 features:
+
+	a. For WinForms, streamlined application startup with the ApplicationConfiguration.Initialize() method call
+	b. File-scoped namespace
+	c. Implicit usings
+
+2. Referenced bootstrap to facilitate rapid development
