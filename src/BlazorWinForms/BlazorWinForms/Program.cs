@@ -11,5 +11,5 @@ static class Program
         Startup.Init();
         ApplicationConfiguration.Initialize();
         Application.Run(new Form1());
-    }    
+    }
 }

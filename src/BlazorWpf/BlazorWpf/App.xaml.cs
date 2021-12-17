@@ -1,16 +1,15 @@
 ﻿using System.Windows;
 using static BlazorWpf.Startup;
 
-namespace BlazorWpf
+namespace BlazorWpf;
+
+/// <summary>
+/// Interaction logic for App.xaml
+/// </summary>
+public partial class App : Application
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    public App()
     {
-        public App()
-        {
-            Init();
-        }
+        Init();
     }
 }

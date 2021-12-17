@@ -1,12 +1,3 @@
-What's new in ver 1.0.9:
+What's new in ver 1.0.10:
 
-1. WinForms template has been updated with .NET 6 features:
-
-	a. Streamlined application startup
-
-		Updated with the ApplicationConfiguration.Initialize() method call in Main method.
-
-	b. File-scoped namespace
-	c. Implicit usings
-
-2. Referenced bootstrap to facilitate rapid development
+Project dependencies have been updated to .NET 6 / .NET MAUI Preview 11.

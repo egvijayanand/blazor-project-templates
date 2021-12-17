@@ -1,9 +1,5 @@
-What's new in ver. 1.0.5:
+What's new in ver. 1.0.6:
 
-1. Templates have been updated with .NET 6 features:
+Blazor desktop templates for Windows Forms and WPF.
 
-	a. For WinForms, streamlined application startup with the ApplicationConfiguration.Initialize() method call
-	b. File-scoped namespace
-	c. Implicit usings
-
-2. Referenced bootstrap to facilitate rapid development
+Currently targeting .NET 6 / .NET MAUI Preview 11.

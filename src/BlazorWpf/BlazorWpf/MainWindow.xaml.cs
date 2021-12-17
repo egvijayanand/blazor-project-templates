@@ -1,16 +1,15 @@
 ﻿using System.Windows;
 
-namespace BlazorWpf
+namespace BlazorWpf;
+
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            Resources.Add("services", Startup.Services);
-            InitializeComponent();
-        }
+        Resources.Add("services", Startup.Services);
+        InitializeComponent();
     }
 }
