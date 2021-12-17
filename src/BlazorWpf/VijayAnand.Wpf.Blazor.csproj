@@ -1,29 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
-		<PackageType>Template</PackageType>
-		<PackageId>VijayAnand.Wpf.Blazor</PackageId>
-		<PackageVersion>1.0.7</PackageVersion>
-		<Title>WPF App with Blazor component (.NET 6 / .NET MAUI Preview 10)</Title>
-		<Authors>Vijay Anand E G</Authors>
-		<Description>A project for hosting Blazor component in the WPF desktop application.</Description>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<IncludeContentInPack>true</IncludeContentInPack>
-		<IncludeBuildOutput>false</IncludeBuildOutput>
-		<IncludeSymbols>false</IncludeSymbols>
-		<ContentTargetFolders>Content</ContentTargetFolders>
-		<!-- This project has no .NET assemblies, so disable the warning for that -->
-		<NoWarn>$(NoWarn);NU5128</NoWarn>
-		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>https://github.com/egvijayanand/dotnet6-project-templates</RepositoryUrl>
-		<PackageTags>Desktop, WPF, Blazor, Windows, Project;Template</PackageTags>
-		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
-		<PackageReadmeFile>overview.md</PackageReadmeFile>
-		<PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
-	</PropertyGroup>
-	<ItemGroup>
-		<Content Include="BlazorWpf\**\*" Exclude="BlazorWpf\**\bin\**;BlazorWpf\**\obj\**" />
-		<Compile Remove="**\*" />
-		<None Include="overview.md" Pack="true" PackagePath="\" />
-	</ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageType>Template</PackageType>
+        <PackageId>VijayAnand.Wpf.Blazor</PackageId>
+        <Title>WPF App with Blazor component (.NET 6 / .NET MAUI Preview 11)</Title>
+        <Authors>Vijay Anand E G</Authors>
+        <Description>A project for hosting Blazor component in the WPF desktop application.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <IncludeSymbols>false</IncludeSymbols>
+        <ContentTargetFolders>Content</ContentTargetFolders>
+        <!-- This project has no .NET assemblies, so disable the warning for that -->
+        <NoWarn>$(NoWarn);NU5128</NoWarn>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/egvijayanand/dotnet6-project-templates</RepositoryUrl>
+        <PackageTags>Desktop, WPF, Blazor, Windows, Template, BlazorWebView, Hybrid, Razor, Web</PackageTags>
+        <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
+        <PackageReadmeFile>overview.md</PackageReadmeFile>
+        <PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
+    </PropertyGroup>
+    <ItemGroup>
+        <Content Include="BlazorWpf\**\*" Exclude="BlazorWpf\**\bin\**;BlazorWpf\**\obj\**" />
+        <Compile Remove="**\*" />
+        <None Include="overview.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
 </Project>
