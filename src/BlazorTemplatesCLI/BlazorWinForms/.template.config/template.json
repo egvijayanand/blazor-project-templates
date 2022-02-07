@@ -10,7 +10,7 @@
     ],
     "identity": "VijayAnand.WindowsForms.Blazor",
     "description": "A project for hosting Blazor component in the Windows Forms desktop application",
-    "name": "Windows Forms App with Blazor component (.NET 6 / .NET MAUI Preview 11)",
+    "name": "Windows Forms App with Blazor component (.NET 6 / .NET MAUI Preview)",
     "shortName": "winforms-blazor",
     "sourceName": "BlazorWinForms",
     "tags": {

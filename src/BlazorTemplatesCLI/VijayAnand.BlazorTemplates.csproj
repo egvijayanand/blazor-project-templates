@@ -6,7 +6,7 @@
         <PackageVersion>1.0.0</PackageVersion>
         <Title>Blazor Templates for Windows desktop application (Windows Forms and WPF)</Title>
         <Authors>Vijay Anand E G</Authors>
-        <Copyright>Copyright (c) 2021 Vijay Anand E G</Copyright>
+        <Copyright>Copyright &#169; 2022 Vijay Anand E G</Copyright>
         <Description>Project templates for hosting Blazor component in Windows Forms and WPF desktop application.</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <IncludeContentInPack>true</IncludeContentInPack>
@@ -21,6 +21,8 @@
         <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
         <PackageReadmeFile>overview.md</PackageReadmeFile>
         <PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
+		<!-- Source Linking -->
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
     </PropertyGroup>
     <ItemGroup>
         <Content Include="BlazorWinForms\**\*;BlazorWpf\**\*" Exclude="**\bin\**;**\obj\**"/>

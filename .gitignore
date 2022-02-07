@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/src/BlazorTemplatesCLI/Push-Release-Template.bat
+/src/BlazorTemplatesCLI/PackageName.txt
