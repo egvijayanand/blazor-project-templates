@@ -3,8 +3,9 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <PackageType>Template</PackageType>
         <PackageId>VijayAnand.WindowsForms.Blazor</PackageId>
-        <Title>Windows Forms with Blazor component (.NET 6 / .NET MAUI Preview 11)</Title>
+        <Title>Windows Forms App with Blazor component (.NET 6 / .NET MAUI Preview)</Title>
         <Authors>Vijay Anand E G</Authors>
+        <Copyright>Copyright &#169; 2022 Vijay Anand E G</Copyright>
         <Description>A project for hosting Blazor component in the Windows Forms desktop application.</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <IncludeContentInPack>true</IncludeContentInPack>
@@ -19,6 +20,8 @@
         <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
         <PackageReadmeFile>overview.md</PackageReadmeFile>
         <PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
+		<!-- Source Linking -->
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
     </PropertyGroup>
     <ItemGroup>
         <Content Include="BlazorWinForms\**\*" Exclude="BlazorWinForms\**\bin\**;BlazorWinForms\**\obj\**" />

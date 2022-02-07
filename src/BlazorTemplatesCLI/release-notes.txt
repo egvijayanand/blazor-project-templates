@@ -1,5 +1,5 @@
-What's new in ver. 1.0.6:
+What's new in ver. 1.0.7:
 
 Blazor desktop templates for Windows Forms and WPF.
 
-Currently targeting .NET 6 / .NET MAUI Preview 11.
+Currently targeting .NET 6 / .NET MAUI Preview 12.
