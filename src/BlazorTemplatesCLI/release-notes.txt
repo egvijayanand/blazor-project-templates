@@ -1,5 +1,3 @@
-What's new in ver. 1.0.8:
+What's new in ver. 1.0.9:
 
-Blazor desktop templates for Windows Forms and WPF.
-
-Currently targeting .NET 6 / .NET MAUI Preview 13.
+Introduced the ability to generate a solution file while creating the project from CLI.
