@@ -1,3 +1,7 @@
 What's new in ver. 1.0.9:
 
 Introduced the ability to generate a solution file while creating the project from CLI.
+
+Added Blazor-themed branding icon to templates in Visual Studio IDE.
+
+Icon Courtesy: Braja Omar Justico's community contribution.
