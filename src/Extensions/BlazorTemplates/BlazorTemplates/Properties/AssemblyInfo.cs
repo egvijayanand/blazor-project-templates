@@ -1,6 +1,6 @@
-﻿using BlazorTemplates;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.InteropServices;
+using VijayAnand.BlazorTemplates;
 
 [assembly: AssemblyTitle(Vsix.Name)]
 [assembly: AssemblyDescription(Vsix.Description)]

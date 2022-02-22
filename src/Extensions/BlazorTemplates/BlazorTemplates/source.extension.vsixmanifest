@@ -3,7 +3,7 @@
     <Metadata>
         <Identity Id="BlazorTemplates.316c4442-1dec-424e-9a59-e9c637daede6" Version="1.0.0.0" Language="en-US" Publisher="Vijay Anand E G" />
         <DisplayName>Blazor Desktop Templates</DisplayName>
-        <Description xml:space="preserve">A project template for hosting the Blazor component in the Windows Forms and WPF desktop application.</Description>
+        <Description xml:space="preserve">Project template for hosting the Blazor component in the Windows Forms and WPF desktop application.</Description>
         <MoreInfo>https://egvijayanand.in/</MoreInfo>
         <License>license.txt</License>
         <GettingStartedGuide>https://github.com/egvijayanand/dotnet6-project-templates</GettingStartedGuide>
