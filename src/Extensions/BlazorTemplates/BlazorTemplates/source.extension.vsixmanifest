@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="BlazorTemplates.316c4442-1dec-424e-9a59-e9c637daede6" Version="1.0.0.0" Language="en-US" Publisher="Vijay Anand E G" />
+        <DisplayName>Blazor Desktop Templates</DisplayName>
+        <Description xml:space="preserve">A project template for hosting the Blazor component in the Windows Forms and WPF desktop application.</Description>
+        <MoreInfo>https://egvijayanand.in/</MoreInfo>
+        <License>license.txt</License>
+        <GettingStartedGuide>https://github.com/egvijayanand/dotnet6-project-templates</GettingStartedGuide>
+        <ReleaseNotes>release-notes.txt</ReleaseNotes>
+        <Icon>Resources\Icon.png</Icon>
+        <PreviewImage>Resources\Icon.png</PreviewImage>
+        <Tags>Blazor, Desktop, WindowsForms, WinForms, WPF, Windows, Template, BlazorWebView, Hybrid, Razor, Web</Tags>
+        <Preview>true</Preview>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Pro">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Enterprise">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="NuGetTemplates.pkgdef" />
+    </Assets>
+</PackageManifest>

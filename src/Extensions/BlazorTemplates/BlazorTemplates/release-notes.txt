@@ -1,0 +1,3 @@
+What's new in ver. 1.0.0.0:
+
+Initial release of Blazor desktop templates for Windows Forms and WPF published as VS extension (VSIX).
