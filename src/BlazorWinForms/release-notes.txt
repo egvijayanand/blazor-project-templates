@@ -1,3 +1,11 @@
-What's new in ver 1.0.12:
+What's new in ver 1.0.13:
 
-Project dependencies have been updated to .NET 6 / .NET MAUI Preview 13.
+Introduced the ability to generate a solution file while creating the project from CLI.
+
+Added Blazor-themed branding icon to templates in Visual Studio IDE.
+
+Template now also available as a VS extension.
+
+https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates
+
+Icon Courtesy: Braja Omar Justico's community contribution.

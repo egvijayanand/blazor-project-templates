@@ -16,5 +16,39 @@
     "tags": {
         "language": "C#",
         "type": "project"
-    }
+    },
+    "preferNameDirectory": true,
+    "guids": [
+        "BFE86658-D849-4D16-9254-B6375A7C11E5"
+    ],
+    "symbols": {
+        "HostIdentifier": {
+            "type": "bind",
+            "binding": "HostIdentifier"
+        }
+    },
+    "sources": [
+        {
+            "source": "./",
+            "target": "./",
+            "copyOnly": [
+                "**/*.eot",
+                "**/*.svg",
+                "**/*.ttf",
+                "**/*.woff",
+                "**/*.woff2",
+                "**/*.min.css",
+                "**/*.min.css.map",
+                "**/*.min.js"
+            ],
+            "modifiers": [
+                {
+                    "condition": "(!(HostIdentifier == \"dotnetcli\" || HostIdentifier == \"dotnetcli-preview\"))",
+                    "exclude": [
+                        "BlazorWinForms.sln"
+                    ]
+                }
+            ]
+        }
+    ]
 }
