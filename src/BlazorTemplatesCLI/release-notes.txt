@@ -1,7 +1,5 @@
-What's new in ver. 1.0.9:
+What's new in ver. 1.0.10:
 
-Introduced the ability to generate a solution file while creating the project from CLI.
+Blazor desktop templates for Windows Forms and WPF.
 
-Added Blazor-themed branding icon to templates in Visual Studio IDE.
-
-Icon Courtesy: Braja Omar Justico's community contribution.
+Currently targeting .NET 6 / .NET MAUI Preview 14.

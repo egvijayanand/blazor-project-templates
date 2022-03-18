@@ -21,6 +21,7 @@
         <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
         <PackageReadmeFile>overview.md</PackageReadmeFile>
         <PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
+        <PackageIcon>icon.png</PackageIcon>
 		<!-- Source Linking -->
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
     </PropertyGroup>
@@ -28,5 +29,6 @@
         <Content Include="BlazorWinForms\**\*;BlazorWpf\**\*" Exclude="**\bin\**;**\obj\**"/>
         <Compile Remove="**\*"/>
         <None Include="overview.md" Pack="true" PackagePath="\" />
+        <None Include="icon.png" Pack="true" PackagePath="" />
     </ItemGroup>
 </Project>
