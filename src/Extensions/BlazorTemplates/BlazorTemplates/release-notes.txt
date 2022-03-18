@@ -1,3 +1,3 @@
-What's new in ver. 1.0.0.0:
+What's new in ver. 1.0.1.0:
 
-Initial release of Blazor desktop templates for Windows Forms and WPF published as VS extension (VSIX).
+Blazor desktop templates for Windows Forms and WPF updated with .NET MAUI Preview 14 package dependencies.
