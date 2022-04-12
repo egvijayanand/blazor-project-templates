@@ -1,6 +1,6 @@
-What's new in ver 1.0.14:
+What's new in ver 1.0.15:
 
-Project dependencies have been updated to .NET 6 / .NET MAUI Preview 14.
+Project dependencies have been updated to .NET 6 / .NET MAUI RC1.
 
 Unified template now also available as a VS extension.
 

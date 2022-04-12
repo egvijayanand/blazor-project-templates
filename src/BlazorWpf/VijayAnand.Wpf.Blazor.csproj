@@ -3,7 +3,7 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <PackageType>Template</PackageType>
         <PackageId>VijayAnand.Wpf.Blazor</PackageId>
-        <Title>WPF App with Blazor component (.NET 6 / .NET MAUI Preview)</Title>
+        <Title>WPF App with Blazor component (.NET 6 / .NET MAUI RC1)</Title>
         <Authors>Vijay Anand E G</Authors>
         <Copyright>Copyright &#169; 2022 Vijay Anand E G</Copyright>
         <Description>A project for hosting Blazor component in the WPF desktop application.</Description>
