@@ -53,7 +53,7 @@
 		</Compile>
 	</ItemGroup>
 	<ItemGroup>
-		<None Include="Assets\VijayAnand.BlazorTemplates.1.0.10.nupkg" />
+		<None Include="Assets\VijayAnand.BlazorTemplates.1.0.11.nupkg" />
 		<None Include="source.extension.vsixmanifest">
 			<SubType>Designer</SubType>
 			<Generator>VsixManifestGenerator</Generator>
