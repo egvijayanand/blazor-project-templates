@@ -64,8 +64,10 @@ After installing the CLI template, optionally, this can be made available in the
 
 ![Blazor Desktop Project Templates within Visual Studio 2022](./images/blazor-desktop-templates.png)
 
+<!--
 Users on VS2019 (ver. 16.8+) need to enable the option as shown in the below screenshot (Tools -> Options / `Alt + T + O`) and then restart the Visual Studio instance for this to take effect.
 
 _And in case of Visual Studio 2022, the option of listing the installed .NET CLI templates within IDE is enabled by default._
 
 ![CLI Project Templates within Visual Studio 2019](./images/cli-templates-option-enable.png)
+-->
