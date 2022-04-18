@@ -18,5 +18,11 @@ public static class Startup
     private static void WireupServices(HostBuilderContext context, IServiceCollection services)
     {
         services.AddWindowsFormsBlazorWebView();
+
+//-:cnd:noEmit
+#if DEBUG
+        services.AddBlazorWebViewDeveloperTools();
+#endif
+//+:cnd:noEmit
     }
 }
