@@ -1,5 +1,7 @@
-What's new in ver. 1.0.2.0:
+What's new in ver. 1.0.3.0:
 
 Blazor desktop templates for Windows Forms and WPF updated with .NET MAUI RC1 (Production supported) package dependencies.
+
+Conditionally enabled the BlazorWebView Developer Tools for crafting a pixel-perfect UI.
 
 For the articles on working with .NET MAUI and Blazor, stay connected with my blog: https://egvijayanand.in/
