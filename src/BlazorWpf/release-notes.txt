@@ -1,6 +1,8 @@
-What's new in ver 1.0.16:
+What's new in ver 1.0.17:
 
 Project dependencies have been updated to .NET 6 / .NET MAUI RC1.
+
+Conditionally enabled the BlazorWebView Developer Tools for crafting a pixel-perfect UI.
 
 Unified template now also available as a VS extension.
 
