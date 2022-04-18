@@ -12,6 +12,8 @@ Templates made available for working with **Blazor components in desktop applica
 
 Also available in an unified template package.
 
+Join me on [**Developer Thoughts**](https://egvijayanand.in/), an exclusive blog for .NET MAUI and Blazor, for articles on working with these templates and much more.
+
 Now published as Visual Studio 2022 Extension, can be downloaded from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates) and then installed with VSIX installer or even an easy way, install and manage directly from within Visual Studio IDE itself (Extensions -> Manage Extensions or `Alt + X + M` shortcut). To find this extension, search with the `blazorwebview` keyword. Refer to the below screenshot.
 
 ![Visual Studio – Manage Extensions (Blazor Desktop Templates in focus)](./images/vs-manage-extensions.png)
