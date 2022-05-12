@@ -1,8 +1,8 @@
-What's new in ver. 1.0.13:
+What's new in ver. 1.0.14:
 
 Blazor desktop templates for Windows Forms and WPF.
 
-Currently targeting .NET 6 / .NET MAUI RC2.
+Currently targeting .NET 6 / .NET MAUI RC3.
 
 Added Theming support for Blazor hosted Form / Window.
 
