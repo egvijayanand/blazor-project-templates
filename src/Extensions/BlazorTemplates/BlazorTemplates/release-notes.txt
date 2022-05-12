@@ -1,7 +1,5 @@
-What's new in ver. 1.0.4.0:
+What's new in ver. 1.0.5.0:
 
-Blazor desktop templates for Windows Forms and WPF updated with .NET MAUI RC2 (Production supported) package dependencies.
-
-Added Theming support for Blazor hosted Form / Window.
+Blazor desktop templates for Windows Forms and WPF updated with .NET MAUI RC3 (Production supported) package dependencies.
 
 For the articles on working with .NET MAUI and Blazor, stay connected with my blog: https://egvijayanand.in/
