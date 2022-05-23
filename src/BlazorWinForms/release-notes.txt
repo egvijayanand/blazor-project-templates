@@ -1,7 +1,11 @@
-What's new in ver 1.0.18:
+What's new in ver 1.1.0:
 
-Project dependencies have been updated to .NET 6 / .NET MAUI RC3.
+Project dependencies have been updated to .NET 6 / .NET MAUI.
 
 Unified template now also available as a VS extension.
 
 https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates
+
+Take a look at this Blazor article for working with these templates:
+
+https://egvijayanand.in/2021/11/13/net-maui-blazor/
