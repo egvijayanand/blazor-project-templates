@@ -1,6 +1,6 @@
-What's new in ver. 1.1.0.0:
+What's new in ver. 1.2.0.0:
 
-Blazor desktop templates for Windows Forms and WPF updated with .NET MAUI GA version package dependencies.
+Blazor desktop templates for Windows Forms and WPF updated with .NET MAUI  SR1 (Service Release 1) version package dependencies.
 
 For the articles on working with .NET MAUI and Blazor, stay connected with my blog: https://egvijayanand.in/
 
