@@ -1,6 +1,18 @@
-What's new in ver. 1.2.0.0:
+What's new in ver. 2.0.0.0:
 
-Blazor desktop templates for Windows Forms and WPF updated with .NET MAUI  SR1 (Service Release 1) version package dependencies.
+Blazor desktop templates for Windows Forms and WPF.
+
+Currently targeting .NET 6 / 7 and the corresponding .NET MAUI release.
+
+A parameter named framework has been introduced that takes either net6.0 or net7.0 as its options (with net7.0 being the default value).
+
+dotnet new winforms-blazor --framework net6.0
+
+dotnet new winforms-blazor -f net7.0
+
+dotnet new wpf-blazor --framework net6.0
+
+dotnet new wpf-blazor -f net7.0
 
 For the articles on working with .NET MAUI and Blazor, stay connected with my blog: https://egvijayanand.in/
 
