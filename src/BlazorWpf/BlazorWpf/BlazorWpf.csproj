@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net6.0-windows7.0</TargetFramework>
+        <TargetFramework>DOTNET_TFM-windows7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -10,8 +10,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="6.0.400" />
+        <!--#if (Net7)-->
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="7.0.0-rc.1.6683" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0-rc.1.22426.10" />
+        <!--#else-->
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="6.0.540" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+        <!--#endif-->
     </ItemGroup>
 
     <ItemGroup>
