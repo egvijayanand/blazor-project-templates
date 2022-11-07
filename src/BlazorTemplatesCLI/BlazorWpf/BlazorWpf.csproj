@@ -11,10 +11,10 @@
 
     <ItemGroup>
         <!--#if (Net7)-->
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="7.0.0-rc.1.6683" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0-rc.1.22426.10" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="7.0.49" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
         <!--#else-->
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="6.0.540" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="6.0.547" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
         <!--#endif-->
     </ItemGroup>
