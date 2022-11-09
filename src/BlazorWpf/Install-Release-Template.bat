@@ -17,6 +17,17 @@ set /P packageVersion=<PackageVersion.txt
 
 if [%packageVersion%]==[] (call Error "Version # not configured." & goto end)
 
+:: Validate the Package
+
+call Info "Validating %packageName% ver. %packageVersion% ..."
+
+templates analyze -p .\bin\Release\%packageName%.%packageVersion%.nupkg
+
+echo.
+if %errorlevel% == 0 (call Info "Package validated.") else (call Error "Package validation failed." & goto end)
+
+:: Install the package
+
 call Info "Installing the %packageName% release template ver. %packageVersion% ..."
 
 dotnet new --install .\bin\Release\%packageName%.%packageVersion%.nupkg

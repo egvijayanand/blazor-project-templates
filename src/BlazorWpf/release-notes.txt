@@ -1,4 +1,6 @@
-What's new in ver 2.0.0:
+What's new in ver 2.1.0:
+------------------------
+Template has been updated to support .NET 7 GA release.
 
 Currently targeting .NET 6 / 7 and the corresponding .NET MAUI release.
 
