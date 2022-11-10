@@ -15,7 +15,7 @@
         <!-- This project has no .NET assemblies, so disable the warning for that -->
         <NoWarn>$(NoWarn);NU5128</NoWarn>
         <RepositoryType>git</RepositoryType>
-        <RepositoryUrl>https://github.com/egvijayanand/dotnet6-project-templates</RepositoryUrl>
+        <RepositoryUrl>https://github.com/egvijayanand/blazor-project-templates</RepositoryUrl>
         <PackageTags>Desktop, WinForms, Blazor, Windows, Forms, Template, BlazorWebView, Hybrid, Razor, Web</PackageTags>
         <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
         <PackageReadmeFile>overview.md</PackageReadmeFile>

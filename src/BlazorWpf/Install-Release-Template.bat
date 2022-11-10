@@ -28,6 +28,7 @@ if %errorlevel% == 0 (call Info "Package validated.") else (call Error "Package 
 
 :: Install the package
 
+echo.
 call Info "Installing the %packageName% release template ver. %packageVersion% ..."
 
 dotnet new --install .\bin\Release\%packageName%.%packageVersion%.nupkg
