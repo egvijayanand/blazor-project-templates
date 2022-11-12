@@ -1,4 +1,4 @@
-## .NET 6 Project Templates
+## Blazor Desktop Project Templates
 
 ### Blazor desktop project templates for Windows Forms and WPF
 
@@ -23,17 +23,17 @@ For CLI users, commands to install the project template:
 Unified Template:
 
 ```shell
-dotnet new --install VijayAnand.BlazorTemplates
+dotnet new install VijayAnand.BlazorTemplates
 ```
 
 Can also be installed separately.
 
 ```shell
-dotnet new --install VijayAnand.WindowsForms.Blazor
+dotnet new install VijayAnand.WindowsForms.Blazor
 ```
 
 ```shell
-dotnet new --install VijayAnand.Wpf.Blazor
+dotnet new install VijayAnand.Wpf.Blazor
 ```
 
 #### Project names referenced by these templates:
