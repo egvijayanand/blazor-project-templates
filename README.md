@@ -36,6 +36,15 @@ dotnet new install VijayAnand.WindowsForms.Blazor
 dotnet new install VijayAnand.Wpf.Blazor
 ```
 
+To update the template package:
+
+```shell
+dotnet new update --check-only
+```
+```shell
+dotnet new update
+```
+
 #### Project names referenced by these templates:
 
 Windows Forms: **winforms-blazor**
@@ -60,6 +69,12 @@ dotnet new wpf-blazor --framework net6.0
 
 ```shell
 dotnet new wpf-blazor -f net7.0
+```
+
+To uninstall the template package:
+
+```shell
+dotnet new uninstall VijayAnand.BlazorTemplates
 ```
 
 To run the project, it does depend on the WebView2 runtime, which can be downloaded from here:

@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace BlazorWpf;
+namespace BlazorWpf._1;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml

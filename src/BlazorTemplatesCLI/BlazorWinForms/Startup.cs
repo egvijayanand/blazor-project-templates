@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace BlazorWinForms;
+namespace BlazorWinForms._1;
 
 public static class Startup
 {
