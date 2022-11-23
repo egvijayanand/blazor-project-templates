@@ -1,4 +1,8 @@
-What's new in ver. 2.1.0:
+What's new in ver. 2.1.1:
+
+A little housekeeping to improve the reliability of the templates.
+
+v2.1.0:
 
 Templates updated for .NET 7 GA release.
 

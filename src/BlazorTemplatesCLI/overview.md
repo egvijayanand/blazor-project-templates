@@ -5,7 +5,16 @@ A project template for hosting the Blazor component in the Windows Forms and WPF
 To install the template package:
 
 ```shell
-dotnet new --install VijayAnand.BlazorTemplates
+dotnet new install VijayAnand.BlazorTemplates
+```
+
+To update the template package:
+
+```shell
+dotnet new update --check-only
+```
+```shell
+dotnet new update
 ```
 
 To make use of the template:
@@ -20,4 +29,10 @@ For WPF:
 
 ```shell
 dotnet new wpf-blazor
+```
+
+To uninstall the template package:
+
+```shell
+dotnet new uninstall VijayAnand.BlazorTemplates
 ```

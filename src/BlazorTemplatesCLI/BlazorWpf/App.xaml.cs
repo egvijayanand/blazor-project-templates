@@ -1,7 +1,7 @@
 ﻿using System.Windows;
-using static BlazorWpf.Startup;
+using static BlazorWpf._1.Startup;
 
-namespace BlazorWpf;
+namespace BlazorWpf._1;
 
 /// <summary>
 /// Interaction logic for App.xaml

@@ -4,17 +4,17 @@
         <OutputType>WinExe</OutputType>
         <TargetFramework>DOTNET_TFM-windows7.0</TargetFramework>
         <Nullable>enable</Nullable>
-        <UseWPF>true</UseWPF>
+        <UseWindowsForms>true</UseWindowsForms>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>BlazorWpf</RootNamespace>
+        <RootNamespace>BlazorWinForms._1</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
         <!--#if (Net7)-->
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="7.0.49" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="7.0.49" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
         <!--#else-->
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="6.0.547" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="6.0.547" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
         <!--#endif-->
     </ItemGroup>

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components.WebView.WindowsForms;
 
-namespace BlazorWinForms;
+namespace BlazorWinForms._1;
 
 public partial class Form1 : Form
 {
