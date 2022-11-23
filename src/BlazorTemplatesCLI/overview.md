@@ -8,6 +8,15 @@ To install the template package:
 dotnet new install VijayAnand.BlazorTemplates
 ```
 
+To update the template package:
+
+```shell
+dotnet new update --check-only
+```
+```shell
+dotnet new update
+```
+
 To make use of the template:
 
 For WinForms:
