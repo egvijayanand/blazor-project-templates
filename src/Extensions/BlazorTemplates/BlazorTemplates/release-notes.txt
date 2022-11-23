@@ -1,5 +1,9 @@
-What's new in ver. 2.1.0.0:
+What's new in ver. 2.1.1.0:
 ---------------------------
+A little housekeeping to improve the reliability of the templates.
+
+v2.1.0.0:
+
 Templates have been updated to support .NET 7 GA release.
 
 Blazor desktop templates for Windows Forms and WPF.
