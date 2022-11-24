@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWpf", "BlazorWpf.csproj", "{F7B43479-A7C7-4021-BDD2-2C7F90604B4A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWinForms.1", "BlazorWinForms.1.csproj", "{BFE86658-D849-4D16-9254-B6375A7C11E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F7B43479-A7C7-4021-BDD2-2C7F90604B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7B43479-A7C7-4021-BDD2-2C7F90604B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7B43479-A7C7-4021-BDD2-2C7F90604B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7B43479-A7C7-4021-BDD2-2C7F90604B4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE86658-D849-4D16-9254-B6375A7C11E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE86658-D849-4D16-9254-B6375A7C11E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE86658-D849-4D16-9254-B6375A7C11E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE86658-D849-4D16-9254-B6375A7C11E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

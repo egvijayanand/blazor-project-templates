@@ -1,7 +1,7 @@
 {
     "$schema": "https://json.schemastore.org/template",
     "author": "Vijay Anand E G",
-    "defaultName": "BlazorWpf",
+    "defaultName": "BlazorWpf1",
     "classifications": [
         "Windows",
         "Desktop",
@@ -12,7 +12,7 @@
     "description": "A project for hosting Blazor component in the WPF desktop application",
     "name": "WPF App with Blazor component (.NET 6/7 & .NET MAUI)",
     "shortName": "wpf-blazor",
-    "sourceName": "BlazorWpf",
+    "sourceName": "BlazorWpf.1",
     "tags": {
         "language": "C#",
         "type": "project"
@@ -76,7 +76,7 @@
                 {
                     "condition": "(!(HostIdentifier == \"dotnetcli\" || HostIdentifier == \"dotnetcli-preview\"))",
                     "exclude": [
-                        "BlazorWpf.sln"
+                        "BlazorWpf.1.sln"
                     ]
                 }
             ]
