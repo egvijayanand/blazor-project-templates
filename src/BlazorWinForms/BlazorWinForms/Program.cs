@@ -1,4 +1,4 @@
-namespace BlazorWinForms;
+namespace BlazorWinForms._1;
 
 static class Program
 {

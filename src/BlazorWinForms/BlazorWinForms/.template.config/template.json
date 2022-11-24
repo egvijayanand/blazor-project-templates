@@ -1,7 +1,7 @@
 {
     "$schema": "https://json.schemastore.org/template",
     "author": "Vijay Anand E G",
-    "defaultName": "BlazorWinForms",
+    "defaultName": "BlazorWinForms1",
     "classifications": [
         "Windows",
         "Desktop",
@@ -12,7 +12,7 @@
     "description": "A project for hosting Blazor component in the Windows Forms desktop application",
     "name": "Windows Forms App with Blazor component (.NET 6/7 & .NET MAUI)",
     "shortName": "winforms-blazor",
-    "sourceName": "BlazorWinForms",
+    "sourceName": "BlazorWinForms.1",
     "tags": {
         "language": "C#",
         "type": "project"
@@ -76,7 +76,7 @@
                 {
                     "condition": "(!(HostIdentifier == \"dotnetcli\" || HostIdentifier == \"dotnetcli-preview\"))",
                     "exclude": [
-                        "BlazorWinForms.sln"
+                        "BlazorWinForms.1.sln"
                     ]
                 }
             ]
