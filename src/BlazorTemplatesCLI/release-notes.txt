@@ -1,4 +1,14 @@
-What's new in ver. 2.1.1:
+What's new in ver. 2.1.2:
+-------------------------
+Templates updated for .NET 7 service release.
+
+The Blazor hybrid package version is updated as a wildcard so that the latest stable version will be pulled from the NuGet repository.
+
+.NET 7 - 7.0.*
+
+.NET 6 - 6.0.*
+
+v2.1.1:
 
 A little housekeeping to improve the reliability of the templates.
 
