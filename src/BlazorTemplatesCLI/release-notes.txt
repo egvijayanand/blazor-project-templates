@@ -1,4 +1,4 @@
-What's new in ver. 2.1.2:
+What's new in ver. 2.2.0:
 -------------------------
 Templates updated for .NET 7 service release.
 
