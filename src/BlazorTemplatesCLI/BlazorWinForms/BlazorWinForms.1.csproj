@@ -10,9 +10,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <!--#if (Net7)-->
+        <!--#if (Net8)-->
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="8.0.0-preview.1.7762" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0-preview.1.23110.8" />
+        <!--#elif (Net7)-->
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="7.0.*" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
         <!--#else-->
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="6.0.*" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />

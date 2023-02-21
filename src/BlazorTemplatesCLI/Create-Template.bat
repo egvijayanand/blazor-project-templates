@@ -21,14 +21,29 @@ set /P packageVersion=<PackageVersion.txt
 
 if [%packageVersion%]==[] (call Error "Version # not configured." & goto end)
 
-@echo Version #: %packageVersion%
+:: Check whether the context is git repository or not
+git rev-parse --is-inside-work-tree
 
-if exist .\bin\%config%\%packageName%.%packageVersion%.nupkg del .\bin\Release\%packageName%.%packageVersion%.nupkg
+:: Retrieve the hash of the latest commit
+if %errorlevel% == 0 (for /F "tokens=*" %%g in ('git rev-parse --short HEAD') do (set revisionId=+sha.%%g)) else (set revisionId=)
 
-call Info "Creating NuGet package in %config% mode ..."
+echo.
+call Info ".NET SDK Version"
 
-dotnet pack .\VijayAnand.BlazorTemplates.csproj -c Release -p:PackageVersion=%packageVersion%
+dotnet --version
 
+echo.
+call Info "Deleting existing package ..."
+
+if exist .\bin\%config%\%packageName%.%packageVersion%.nupkg del .\bin\%config%\%packageName%.%packageVersion%.nupkg
+
+echo.
+call Info "Creating %packageName% ver. %packageVersion% NuGet package in %config% mode ..."
+
+echo.
+dotnet pack .\VijayAnand.BlazorTemplates.csproj -c Release -p:PackageVersion=%packageVersion%%revisionId%
+
+echo.
 if %errorlevel% == 0 (call Success "Process completed.") else (call Error "Create package failed.")
 
 :end
