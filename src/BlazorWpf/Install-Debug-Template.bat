@@ -19,7 +19,7 @@ if [%packageVersion%]==[] (call Error "Version # not configured." & goto end)
 
 call Info "Installing the %packageName% debug template ver. %packageVersion% ..."
 
-dotnet new --install .\bin\Debug\%packageName%.%packageVersion%.nupkg
+dotnet new install .\bin\Debug\%packageName%.%packageVersion%.nupkg
 
 if %errorlevel% == 0 (call Success "Process completed.") else (call Error "Install package failed.")
 
