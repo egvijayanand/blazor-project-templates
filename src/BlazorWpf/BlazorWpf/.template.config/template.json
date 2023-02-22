@@ -10,7 +10,7 @@
     ],
     "identity": "VijayAnand.Wpf.Blazor",
     "description": "A project for hosting Blazor component in the WPF desktop application",
-    "name": "WPF App with Blazor component (.NET 6/7 & .NET MAUI)",
+    "name": "WPF App with Blazor component (.NET 6/7/8 & .NET MAUI)",
     "shortName": "wpf-blazor",
     "sourceName": "BlazorWpf.1",
     "tags": {
@@ -27,6 +27,11 @@
             "datatype": "choice",
             "description": "Option to choose the application target framework.",
             "choices": [
+                {
+                    "choice": "net8.0",
+                    "description": "Target .NET 8",
+                    "displayName": ".NET 8 (Preview)"
+                },
                 {
                     "choice": "net7.0",
                     "description": "Target .NET 7",
@@ -48,6 +53,10 @@
                 "source": "Framework",
                 "toLower": true
             }
+        },
+        "Net8": {
+            "type": "computed",
+            "value": "(frameworkLower == \"net8.0\")"
         },
         "Net7": {
             "type": "computed",

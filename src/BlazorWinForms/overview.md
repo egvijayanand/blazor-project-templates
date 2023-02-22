@@ -3,7 +3,7 @@ A project template for hosting the Blazor component in the Windows Forms desktop
 To install the template:
 
 ```shell
-dotnet new --install VijayAnand.WindowsForms.Blazor
+dotnet new install VijayAnand.WindowsForms.Blazor
 ```
 
 To make use of the template:
