@@ -33,7 +33,7 @@ For WPF:
 dotnet new wpf-blazor
 ```
 
-To target .NET 6 / .NET 8, pass the appropriate value (`net6.0` / `net8.0`) to the framework (`--framework` | `-f`) parameter, example shown below.
+To target .NET 6 / .NET 8, pass the corresponding value (`net6.0` / `net8.0`) to the framework (`--framework` | `-f`) parameter, example shown below.
 
 ```shell
 dotnet new winforms-blazor -f net8.0

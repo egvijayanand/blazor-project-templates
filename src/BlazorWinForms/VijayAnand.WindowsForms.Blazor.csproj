@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <PackageType>Template</PackageType>
         <PackageId>VijayAnand.WindowsForms.Blazor</PackageId>
-        <Title>Windows Forms App with Blazor component (.NET 6 / .NET MAUI RC2)</Title>
+        <Title>Windows Forms App with Blazor component (.NET 6/7/8 &amp; .NET MAUI)</Title>
         <Authors>Vijay Anand E G</Authors>
-        <Copyright>Copyright &#169; 2022 Vijay Anand E G</Copyright>
+        <Copyright>Copyright &#169; 2021-2023 Vijay Anand E G</Copyright>
         <Description>A project for hosting Blazor component in the Windows Forms desktop application.</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <IncludeContentInPack>true</IncludeContentInPack>
