@@ -4,9 +4,9 @@
 
 | Version | App Model |
 | :-----: | :-------: |
-| [![Blazor NuGet Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/) [![Blazor Desktop Templates - VS Marketplace](https://badgen.net/vs-marketplace/v/egvijayanand.blazor-desktop-templates)](https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates) | [Unified Package](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)|
-| [![WinForms Blazor NuGet Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/) | [Windows Forms](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|
-| [![WPF Blazor NuGet Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/) | [WPF](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|
+| [![Blazor NuGet Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/) [![Blazor Desktop Templates - VS Marketplace](https://badgen.net/vs-marketplace/v/egvijayanand.blazor-desktop-templates?icon=visualstudio)](https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates) | [Unified Package](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)|
+| [![WinForms Blazor NuGet Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/) | [Windows Forms](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|
+| [![WPF Blazor NuGet Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/) | [WPF](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|
 
 Templates made available for working with **Blazor components in desktop applications such as Windows Forms and WPF**.
 
@@ -56,7 +56,7 @@ So, .NET CLI command to create a new project from your favorite terminal would b
 To create projects targeting different supported version of .NET, make use of the newly introduced `--framework` | `-f` parameter that takes `net6.0` / `net7.0` / `net8.0` as its options (with `net7.0` being the default value, if not specified).
 
 ```shell
-dotnet new winforms-blazor --framework net6.0
+dotnet new winforms-blazor -f net6.0
 ```
 
 ```shell
@@ -68,7 +68,7 @@ dotnet new winforms-blazor -f net8.0
 ```
 
 ```shell
-dotnet new wpf-blazor --framework net6.0
+dotnet new wpf-blazor -f net6.0
 ```
 
 ```shell

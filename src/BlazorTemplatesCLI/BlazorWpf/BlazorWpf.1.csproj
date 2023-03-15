@@ -1,4 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
@@ -11,8 +12,8 @@
 
     <ItemGroup>
         <!--#if (Net8)-->
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="8.0.0-preview.1.7762" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0-preview.1.23110.8" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="8.0.0-preview.2.*" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0-preview.2.*" />
         <!--#elif (Net7)-->
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="7.0.*" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
