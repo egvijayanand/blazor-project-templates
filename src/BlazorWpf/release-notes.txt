@@ -1,5 +1,13 @@
-What's new in ver. 3.0.1:
+What's new in ver. 3.0.2:
 -------------------------
+Added the option to skip creating a solution file.
+
+-nsf | --no-solution-file
+
+dotnet new wpf-blazor -nsf
+
+v3.0.1:
+
 Templates updated to support .NET 8 Preview 2.
 
 v3.0.0:
