@@ -1,8 +1,10 @@
+Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
+
 What's new in ver. 3.0.2:
 -------------------------
 Added the option to skip creating a solution file.
 
--nsf | --no-solution-file
+-nsf | --no-solution-file - Default value is false
 
 dotnet new wpf-blazor -nsf
 
