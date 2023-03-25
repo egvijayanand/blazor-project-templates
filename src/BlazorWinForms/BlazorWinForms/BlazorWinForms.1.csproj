@@ -4,6 +4,10 @@
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <TargetFramework>DOTNET_TFM-windows7.0</TargetFramework>
+        <!--#if (NonWindows)-->
+        <EnableWindowsTargeting>true</EnableWindowsTargeting>
+        <!--#endif-->
+        <!-- Project Options -->
         <Nullable>enable</Nullable>
         <UseWindowsForms>true</UseWindowsForms>
         <ImplicitUsings>enable</ImplicitUsings>

@@ -63,11 +63,21 @@
             "type": "computed",
             "value": "(frameworkLower == \"net7.0\")"
         },
+        "enable-windows-targeting": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Option to allow restore/build of Windows project on non-Windows platforms."
+        },
         "no-solution-file": {
             "type": "parameter",
             "datatype": "bool",
             "defaultValue": "false",
             "description": "Option to skip creating a solution file."
+        },
+        "NonWindows": {
+            "type": "computed",
+            "value": "(enable-windows-targeting)"
         },
         "HostIdentifier": {
             "type": "bind",
