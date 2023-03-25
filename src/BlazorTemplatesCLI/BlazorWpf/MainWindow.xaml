@@ -8,7 +8,7 @@
     xmlns:local="clr-namespace:BlazorWpf._1"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="MainWindow"
-    Height="450"
+    Height="600"
     Width="800"
     mc:Ignorable="d">
     <Grid>

@@ -15,7 +15,7 @@ public partial class Form1 : Form
             Services = Startup.Services
         };
 
-        blazor.RootComponents.Add<App>("#app");
+        blazor.RootComponents.Add<Main>("#app");
         Controls.Add(blazor);
     }
 }
