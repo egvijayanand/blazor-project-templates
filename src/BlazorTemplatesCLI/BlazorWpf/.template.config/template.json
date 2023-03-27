@@ -10,7 +10,7 @@
     ],
     "identity": "VijayAnand.Wpf.Blazor",
     "description": "A project for hosting Blazor component in the WPF desktop application",
-    "name": "WPF App with Blazor component (.NET 6/7/8 & .NET MAUI)",
+    "name": "WPF App with Blazor component",
     "shortName": "wpf-blazor",
     "sourceName": "BlazorWpf.1",
     "tags": {
