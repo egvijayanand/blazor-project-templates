@@ -1,6 +1,6 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
 
-What's new in ver. 3.0.4:
+What's new in ver. 3.1.0:
 -------------------------
 1. Added the open-iconic artifacts to the solution
 
