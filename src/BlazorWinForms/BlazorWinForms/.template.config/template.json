@@ -10,7 +10,7 @@
     ],
     "identity": "VijayAnand.WindowsForms.Blazor",
     "description": "A project for hosting Blazor component in the Windows Forms desktop application",
-    "name": "Windows Forms App with Blazor component",
+    "name": "Windows Forms Blazor App",
     "shortName": "winforms-blazor",
     "sourceName": "BlazorWinForms.1",
     "tags": {

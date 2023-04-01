@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using BlazorWpf._1.Data;
 
 namespace BlazorWpf._1;
 
@@ -18,6 +19,7 @@ public static class Startup
     private static void WireupServices(HostBuilderContext context, IServiceCollection services)
     {
         services.AddWpfBlazorWebView();
+        services.AddSingleton<WeatherForecastService>();
 
 //-:cnd:noEmit
 #if DEBUG
