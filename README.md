@@ -2,11 +2,11 @@
 
 ### Blazor desktop project templates for Windows Forms and WPF
 
-| Version | App Model |
-| :-----: | :-------: |
-| [![Blazor NuGet Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/) [![Blazor Desktop Templates - VS Marketplace](https://badgen.net/vs-marketplace/v/egvijayanand.blazor-desktop-templates?icon=visualstudio)](https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates) | [Unified Package](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)|
-| [![WinForms Blazor NuGet Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/) | [Windows Forms](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|
-| [![WPF Blazor NuGet Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/) | [WPF](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|
+|App Model|Stable Channel|Preview Channel|
+|:---:|:---:|:---:|
+|[Unified Package](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)|[![Blazor NuGet Stable Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)<br />[![Blazor Desktop Templates - VS Marketplace](https://badgen.net/vs-marketplace/v/egvijayanand.blazor-desktop-templates?icon=visualstudio)](https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates)|[![Blazor NuGet Preview Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/latest?icon=nuget)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/absoluteLatest)|
+|[Windows Forms](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|[![WinForms Blazor Stable Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|[![WinForms Blazor Preview Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/latest?icon=nuget)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/absoluteLatest)|
+|[WPF](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|[![WPF Blazor Stable Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|[![WPF Blazor Preview Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/latest?icon=nuget)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/absoluteLatest)|
 
 Templates made available for working with **Blazor components in desktop applications such as Windows Forms and WPF**.
 

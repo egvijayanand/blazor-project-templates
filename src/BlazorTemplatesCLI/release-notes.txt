@@ -1,7 +1,11 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
 
-What's new in ver. 3.1.0:
--------------------------
+What's new in ver. 3.2.0-preview.1:
+-----------------------------------
+Template restructured to follow the same sample as other App Models.
+
+v3.1.0:
+
 1. Added the open-iconic artifacts to the solution
 
 2. While targeting .NET 8, the StartPath property is set to load a Razor component other than the one defined with default route address of '/'
