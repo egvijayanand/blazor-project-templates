@@ -1,6 +1,10 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+#if RazorLib
+using BlazorWpf._1.RazorLib.Data;
+#else
 using BlazorWpf._1.Data;
+#endif
 
 namespace BlazorWpf._1;
 

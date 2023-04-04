@@ -33,6 +33,22 @@ For WPF:
 dotnet new wpf-blazor
 ```
 
+To abstract Razor components as a separate Razor class library, pass the below parameter while creating the project:
+
+`-rcl` | `--razor-class-library` - Default value is `false`
+
+For WinForms:
+
+```shell
+dotnet new winforms-blazor -rcl
+```
+
+For WPF:
+
+```shell
+dotnet new wpf-blazor -rcl
+```
+
 To target .NET 6 / .NET 8, pass the corresponding value (`net6.0` / `net8.0`) to the framework (`--framework` | `-f`) parameter, example shown below.
 
 ```shell

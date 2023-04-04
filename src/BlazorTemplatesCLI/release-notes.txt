@@ -1,7 +1,21 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
 
-What's new in ver. 3.2.0-preview.1:
+What's new in ver. 3.2.0-preview.2:
 -----------------------------------
+An option to abstract the Razor components as a separate Razor class library.
+
+-rcl | --razor-class-library - Default value is false
+
+dotnet new winforms-blazor -n MyApp -rcl
+(or)
+dotnet new winforms-blazor --name MyApp --razor-class-library
+
+dotnet new wpf-blazor -n MyApp -rcl
+(or)
+dotnet new wpf-blazor --name MyApp --razor-class-library
+
+v3.2.0-preview.1:
+
 Template restructured to follow the same sample as other App Models.
 
 v3.1.0:

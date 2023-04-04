@@ -20,7 +20,9 @@
     },
     "preferNameDirectory": true,
     "guids": [
-        "BFE86658-D849-4D16-9254-B6375A7C11E5"
+        "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC",
+        "BFE86658-D849-4D16-9254-B6375A7C11E5",
+        "C94ED45B-38CD-4ACB-B35D-71D65C816C27"
     ],
     "symbols": {
         "Framework": {
@@ -46,6 +48,13 @@
             ],
             "replaces": "DOTNET_TFM",
             "defaultValue": "net7.0"
+        },
+        "razor-class-library": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Option to create a Razor class library to abstract Razor components.",
+            "displayName": "Option to create a _Razor class library to abstract Razor components"
         },
         "frameworkLower": {
             "type": "generated",
@@ -79,6 +88,10 @@
             "type": "computed",
             "value": "(enable-windows-targeting)"
         },
+        "RazorLib": {
+            "type": "computed",
+            "value": "(razor-class-library)"
+        },
         "HostIdentifier": {
             "type": "bind",
             "binding": "HostIdentifier"
@@ -104,6 +117,65 @@
                     "exclude": [
                         "BlazorWinForms.1.sln"
                     ]
+                },
+                {
+                    "condition": "(RazorLib)",
+                    "exclude": [
+                        "BlazorWinForms.1.sln"
+                    ],
+                    "rename": {
+                        "Data/WeatherForecast.cs": "BlazorWinForms.1.RazorLib/Data/WeatherForecast.cs",
+                        "Data/WeatherForecastService.cs": "BlazorWinForms.1.RazorLib/Data/WeatherForecastService.cs",
+                        "Pages/Counter.razor": "BlazorWinForms.1.RazorLib/Pages/Counter.razor",
+                        "Pages/FetchData.razor": "BlazorWinForms.1.RazorLib/Pages/FetchData.razor",
+                        "Pages/Index.razor": "BlazorWinForms.1.RazorLib/Pages/Index.razor",
+                        "Shared/MainLayout.razor": "BlazorWinForms.1.RazorLib/Shared/MainLayout.razor",
+                        "Shared/MainLayout.razor.css": "BlazorWinForms.1.RazorLib/Shared/MainLayout.razor.css",
+                        "Shared/NavMenu.razor": "BlazorWinForms.1.RazorLib/Shared/NavMenu.razor",
+                        "Shared/NavMenu.razor.css": "BlazorWinForms.1.RazorLib/Shared/NavMenu.razor.css",
+                        "Shared/SurveyPrompt.razor": "BlazorWinForms.1.RazorLib/Shared/SurveyPrompt.razor",
+                        "Form1.cs": "BlazorWinForms.1/Form1.cs",
+                        "Form1.Designer.cs": "BlazorWinForms.1/Form1.Designer.cs",
+                        "Main.razor": "BlazorWinForms.1/Main.razor",
+                        "Program.cs": "BlazorWinForms.1/Program.cs",
+                        "Startup.cs": "BlazorWinForms.1/Startup.cs",
+                        "BlazorWinForms.1.csproj": "BlazorWinForms.1/BlazorWinForms.1.csproj",
+                        "wwwroot/css/bootstrap/bootstrap.min.css": "BlazorWinForms.1/wwwroot/css/bootstrap/bootstrap.min.css",
+                        "wwwroot/css/bootstrap/bootstrap.min.css.map": "BlazorWinForms.1/wwwroot/css/bootstrap/bootstrap.min.css.map",
+                        "wwwroot/css/font-awesome/css/all.min.css": "BlazorWinForms.1/wwwroot/css/font-awesome/css/all.min.css",
+                        "wwwroot/css/font-awesome/webfonts/fa-brands-400.ttf": "BlazorWinForms.1/wwwroot/css/font-awesome/webfonts/fa-brands-400.ttf",
+                        "wwwroot/css/font-awesome/webfonts/fa-brands-400.woff2": "BlazorWinForms.1/wwwroot/css/font-awesome/webfonts/fa-brands-400.woff2",
+                        "wwwroot/css/font-awesome/webfonts/fa-regular-400.ttf": "BlazorWinForms.1/wwwroot/css/font-awesome/webfonts/fa-regular-400.ttf",
+                        "wwwroot/css/font-awesome/webfonts/fa-regular-400.woff2": "BlazorWinForms.1/wwwroot/css/font-awesome/webfonts/fa-regular-400.woff2",
+                        "wwwroot/css/font-awesome/webfonts/fa-solid-900.ttf": "BlazorWinForms.1/wwwroot/css/font-awesome/webfonts/fa-solid-900.ttf",
+                        "wwwroot/css/font-awesome/webfonts/fa-solid-900.woff2": "BlazorWinForms.1/wwwroot/css/font-awesome/webfonts/fa-solid-900.woff2",
+                        "wwwroot/css/font-awesome/webfonts/fa-v4compatibility.ttf": "BlazorWinForms.1/wwwroot/css/font-awesome/webfonts/fa-v4compatibility.ttf",
+                        "wwwroot/css/font-awesome/webfonts/fa-v4compatibility.woff2": "BlazorWinForms.1/wwwroot/css/font-awesome/webfonts/fa-v4compatibility.woff2",
+                        "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css": "BlazorWinForms.1/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+                        "wwwroot/css/open-iconic/font/fonts/open-iconic.eot": "BlazorWinForms.1/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+                        "wwwroot/css/open-iconic/font/fonts/open-iconic.otf": "BlazorWinForms.1/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+                        "wwwroot/css/open-iconic/font/fonts/open-iconic.svg": "BlazorWinForms.1/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+                        "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf": "BlazorWinForms.1/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+                        "wwwroot/css/open-iconic/font/fonts/open-iconic.woff": "BlazorWinForms.1/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+                        "wwwroot/css/open-iconic/FONT-LICENSE": "BlazorWinForms.1/wwwroot/css/open-iconic/FONT-LICENSE",
+                        "wwwroot/css/open-iconic/ICON-LICENSE": "BlazorWinForms.1/wwwroot/css/open-iconic/ICON-LICENSE",
+                        "wwwroot/css/open-iconic/README.md": "BlazorWinForms.1/wwwroot/css/open-iconic/README.md",
+                        "wwwroot/css/app.css": "BlazorWinForms.1/wwwroot/css/app.css",
+                        "wwwroot/favicon.ico": "BlazorWinForms.1/wwwroot/favicon.ico",
+                        "wwwroot/index.html": "BlazorWinForms.1/wwwroot/index.html",
+                        "BlazorWinForms.1.RazorLib.sln": "BlazorWinForms.1.sln"
+                    }
+                },
+                {
+                    "condition": "(!RazorLib)",
+                    "exclude": [
+                        "BlazorWinForms.1.RazorLib/BlazorWinForms.1.RazorLib.csproj",
+                        "BlazorWinForms.1.RazorLib/_Imports.razor",
+                        "BlazorWinForms.1.RazorLib.sln"
+                    ],
+                    "rename": {
+                        "BlazorWinForms.1/_Imports.razor": "_Imports.razor"
+                    }
                 }
             ]
         }
