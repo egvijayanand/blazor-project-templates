@@ -79,6 +79,22 @@ dotnet new wpf-blazor -f net7.0
 dotnet new wpf-blazor -f net8.0
 ```
 
+To abstract Razor components as a separate Razor class library, pass the below parameter while creating the project:
+
+`-rcl` | `--razor-class-library` - Default value is `false`
+
+For WinForms:
+
+```shell
+dotnet new winforms-blazor -rcl
+```
+
+For WPF:
+
+```shell
+dotnet new wpf-blazor -rcl
+```
+
 To uninstall the template package:
 
 ```shell

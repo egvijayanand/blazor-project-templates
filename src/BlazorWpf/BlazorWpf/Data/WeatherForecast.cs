@@ -1,4 +1,8 @@
+#if RazorLib
+namespace BlazorWpf._1.RazorLib.Data
+#else
 namespace BlazorWpf._1.Data
+#endif
 {
     public class WeatherForecast
     {

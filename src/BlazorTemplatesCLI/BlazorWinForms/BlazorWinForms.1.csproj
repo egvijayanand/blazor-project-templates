@@ -2,14 +2,16 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
-        <OutputType>WinExe</OutputType>
         <TargetFramework>DOTNET_TFM-windows7.0</TargetFramework>
+        <OutputType>WinExe</OutputType>
+        <UseWindowsForms>true</UseWindowsForms>
         <!--#if (NonWindows)-->
         <EnableWindowsTargeting>true</EnableWindowsTargeting>
         <!--#endif-->
+
         <!-- Project Options -->
         <Nullable>enable</Nullable>
-        <UseWindowsForms>true</UseWindowsForms>
+        <LangVersion>latest</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>BlazorWinForms._1</RootNamespace>
     </PropertyGroup>
@@ -20,12 +22,18 @@
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0-preview.2.*" />
         <!--#elif (Net7)-->
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="7.0.*" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.*" />
         <!--#else-->
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="6.0.*" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.*" />
         <!--#endif-->
     </ItemGroup>
+    <!--#if (RazorLib)-->
+
+    <ItemGroup>
+        <ProjectReference Include="..\BlazorWinForms.1.RazorLib\BlazorWinForms.1.RazorLib.csproj" />
+    </ItemGroup>
+    <!--#endif-->
 
     <ItemGroup>
         <Content Update="wwwroot\css\app.css">

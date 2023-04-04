@@ -20,7 +20,9 @@
     },
     "preferNameDirectory": true,
     "guids": [
-        "F7B43479-A7C7-4021-BDD2-2C7F90604B4A"
+        "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC",
+        "F7B43479-A7C7-4021-BDD2-2C7F90604B4A",
+        "A5AE4880-77B8-43F6-B7F9-76D6F94D54A6"
     ],
     "symbols": {
         "Framework": {
@@ -46,6 +48,13 @@
             ],
             "replaces": "DOTNET_TFM",
             "defaultValue": "net7.0"
+        },
+        "razor-class-library": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Option to create a Razor class library to abstract Razor components.",
+            "displayName": "Option to create a _Razor class library to abstract Razor components"
         },
         "frameworkLower": {
             "type": "generated",
@@ -79,6 +88,10 @@
             "type": "computed",
             "value": "(enable-windows-targeting)"
         },
+        "RazorLib": {
+            "type": "computed",
+            "value": "(razor-class-library)"
+        },
         "HostIdentifier": {
             "type": "bind",
             "binding": "HostIdentifier"
@@ -104,6 +117,67 @@
                     "exclude": [
                         "BlazorWpf.1.sln"
                     ]
+                },
+                {
+                    "condition": "(RazorLib)",
+                    "exclude": [
+                        "BlazorWpf.1.sln"
+                    ],
+                    "rename": {
+                        "Data/WeatherForecast.cs": "BlazorWpf.1.RazorLib/Data/WeatherForecast.cs",
+                        "Data/WeatherForecastService.cs": "BlazorWpf.1.RazorLib/Data/WeatherForecastService.cs",
+                        "Pages/Counter.razor": "BlazorWpf.1.RazorLib/Pages/Counter.razor",
+                        "Pages/FetchData.razor": "BlazorWpf.1.RazorLib/Pages/FetchData.razor",
+                        "Pages/Index.razor": "BlazorWpf.1.RazorLib/Pages/Index.razor",
+                        "Shared/MainLayout.razor": "BlazorWpf.1.RazorLib/Shared/MainLayout.razor",
+                        "Shared/MainLayout.razor.css": "BlazorWpf.1.RazorLib/Shared/MainLayout.razor.css",
+                        "Shared/NavMenu.razor": "BlazorWpf.1.RazorLib/Shared/NavMenu.razor",
+                        "Shared/NavMenu.razor.css": "BlazorWpf.1.RazorLib/Shared/NavMenu.razor.css",
+                        "Shared/SurveyPrompt.razor": "BlazorWpf.1.RazorLib/Shared/SurveyPrompt.razor",
+                        "App.xaml": "BlazorWpf.1/App.xaml",
+                        "App.xaml.cs": "BlazorWpf.1/App.xaml.cs",
+                        "AssemblyInfo.cs": "BlazorWpf.1/AssemblyInfo.cs",
+                        "Main.razor": "BlazorWpf.1/Main.razor",
+                        "MainWindow.xaml": "BlazorWpf.1/MainWindow.xaml",
+                        "MainWindow.xaml.cs": "BlazorWpf.1/MainWindow.xaml.cs",
+                        "Startup.cs": "BlazorWpf.1/Startup.cs",
+                        "BlazorWpf.1.csproj": "BlazorWpf.1/BlazorWpf.1.csproj",
+                        "wwwroot/css/bootstrap/bootstrap.min.css": "BlazorWpf.1/wwwroot/css/bootstrap/bootstrap.min.css",
+                        "wwwroot/css/bootstrap/bootstrap.min.css.map": "BlazorWpf.1/wwwroot/css/bootstrap/bootstrap.min.css.map",
+                        "wwwroot/css/font-awesome/css/all.min.css": "BlazorWpf.1/wwwroot/css/font-awesome/css/all.min.css",
+                        "wwwroot/css/font-awesome/webfonts/fa-brands-400.ttf": "BlazorWpf.1/wwwroot/css/font-awesome/webfonts/fa-brands-400.ttf",
+                        "wwwroot/css/font-awesome/webfonts/fa-brands-400.woff2": "BlazorWpf.1/wwwroot/css/font-awesome/webfonts/fa-brands-400.woff2",
+                        "wwwroot/css/font-awesome/webfonts/fa-regular-400.ttf": "BlazorWpf.1/wwwroot/css/font-awesome/webfonts/fa-regular-400.ttf",
+                        "wwwroot/css/font-awesome/webfonts/fa-regular-400.woff2": "BlazorWpf.1/wwwroot/css/font-awesome/webfonts/fa-regular-400.woff2",
+                        "wwwroot/css/font-awesome/webfonts/fa-solid-900.ttf": "BlazorWpf.1/wwwroot/css/font-awesome/webfonts/fa-solid-900.ttf",
+                        "wwwroot/css/font-awesome/webfonts/fa-solid-900.woff2": "BlazorWpf.1/wwwroot/css/font-awesome/webfonts/fa-solid-900.woff2",
+                        "wwwroot/css/font-awesome/webfonts/fa-v4compatibility.ttf": "BlazorWpf.1/wwwroot/css/font-awesome/webfonts/fa-v4compatibility.ttf",
+                        "wwwroot/css/font-awesome/webfonts/fa-v4compatibility.woff2": "BlazorWpf.1/wwwroot/css/font-awesome/webfonts/fa-v4compatibility.woff2",
+                        "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css": "BlazorWpf.1/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+                        "wwwroot/css/open-iconic/font/fonts/open-iconic.eot": "BlazorWpf.1/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+                        "wwwroot/css/open-iconic/font/fonts/open-iconic.otf": "BlazorWpf.1/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+                        "wwwroot/css/open-iconic/font/fonts/open-iconic.svg": "BlazorWpf.1/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+                        "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf": "BlazorWpf.1/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+                        "wwwroot/css/open-iconic/font/fonts/open-iconic.woff": "BlazorWpf.1/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+                        "wwwroot/css/open-iconic/FONT-LICENSE": "BlazorWpf.1/wwwroot/css/open-iconic/FONT-LICENSE",
+                        "wwwroot/css/open-iconic/ICON-LICENSE": "BlazorWpf.1/wwwroot/css/open-iconic/ICON-LICENSE",
+                        "wwwroot/css/open-iconic/README.md": "BlazorWpf.1/wwwroot/css/open-iconic/README.md",
+                        "wwwroot/css/app.css": "BlazorWpf.1/wwwroot/css/app.css",
+                        "wwwroot/favicon.ico": "BlazorWpf.1/wwwroot/favicon.ico",
+                        "wwwroot/index.html": "BlazorWpf.1/wwwroot/index.html",
+                        "BlazorWpf.1.RazorLib.sln": "BlazorWpf.1.sln"
+                    }
+                },
+                {
+                    "condition": "(!RazorLib)",
+                    "exclude": [
+                        "BlazorWpf.1.RazorLib/BlazorWpf.1.RazorLib.csproj",
+                        "BlazorWpf.1.RazorLib/_Imports.razor",
+                        "BlazorWpf.1.RazorLib.sln"
+                    ],
+                    "rename": {
+                        "BlazorWpf.1/_Imports.razor": "_Imports.razor"
+                    }
                 }
             ]
         }

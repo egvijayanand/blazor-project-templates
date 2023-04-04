@@ -2,14 +2,16 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
-        <OutputType>WinExe</OutputType>
         <TargetFramework>DOTNET_TFM-windows7.0</TargetFramework>
+        <OutputType>WinExe</OutputType>
+        <UseWPF>true</UseWPF>
         <!--#if (NonWindows)-->
         <EnableWindowsTargeting>true</EnableWindowsTargeting>
         <!--#endif-->
+
         <!-- Project Options -->
         <Nullable>enable</Nullable>
-        <UseWPF>true</UseWPF>
+        <LangVersion>latest</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>BlazorWpf._1</RootNamespace>
     </PropertyGroup>
@@ -26,6 +28,12 @@
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
         <!--#endif-->
     </ItemGroup>
+    <!--#if (RazorLib)-->
+
+    <ItemGroup>
+        <ProjectReference Include="..\BlazorWpf.1.RazorLib\BlazorWpf.1.RazorLib.csproj" />
+    </ItemGroup>
+    <!--#endif-->
 
     <ItemGroup>
         <Content Update="wwwroot\css\app.css">

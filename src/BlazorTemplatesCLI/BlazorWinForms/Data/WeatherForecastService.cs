@@ -1,4 +1,8 @@
+#if RazorLib
+namespace BlazorWinForms._1.RazorLib.Data
+#else
 namespace BlazorWinForms._1.Data
+#endif
 {
     public class WeatherForecastService
     {
