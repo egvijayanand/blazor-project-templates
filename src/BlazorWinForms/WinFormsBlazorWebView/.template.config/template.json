@@ -1,0 +1,57 @@
+{
+    "$schema": "https://json.schemastore.org/template",
+    "author": "Vijay Anand E G",
+    "defaultName": "Form1",
+    "classifications": [
+        "Windows",
+        "Desktop",
+        "Windows Forms",
+        "Blazor",
+        "Form"
+    ],
+    "identity": "VijayAnand.WinFormsBlazorWebView",
+    "groupIdentity": "VijayAnand.BlazorTemplates.BlazorWebView.Code",
+    "description": "An item template for Windows Form with BlazorWebView",
+    "name": "Windows Form with BlazorWebView",
+    "shortName": "winforms-bwv",
+    "sourceName": "WinFormsBlazorWebView.1",
+    "primaryOutputs": [
+        {
+            "path": "WinFormsBlazorWebView.1.cs"
+        }
+    ],
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "symbols": {
+        "namespace": {
+            "type": "parameter",
+            "replaces": "MyApp.Namespace",
+            "datatype": "text",
+            "description": "namespace for the generated code"
+        },
+        "sdkVersion": {
+            "type": "bind",
+            "binding": "msbuild:NETCoreSdkVersion"
+        },
+        "Net7": {
+            "type": "generated",
+            "generator": "regexMatch",
+            "datatype": "bool",
+            "parameters": {
+                "pattern": "^(7\\.*\\.*-?.*)$",
+                "source": "sdkVersion"
+            }
+        },
+        "Net8": {
+            "type": "generated",
+            "generator": "regexMatch",
+            "datatype": "bool",
+            "parameters": {
+                "pattern": "^(8\\.*\\.*-?.*)$",
+                "source": "sdkVersion"
+            }
+        }
+    }
+}

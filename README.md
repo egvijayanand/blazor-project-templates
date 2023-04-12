@@ -4,9 +4,9 @@
 
 |App Model|Stable Channel|Preview Channel|
 |:---:|:---:|:---:|
-|[Unified Package](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)|[![Blazor NuGet Stable Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)<br />[![Blazor Desktop Templates - VS Marketplace](https://badgen.net/vs-marketplace/v/egvijayanand.blazor-desktop-templates?icon=visualstudio)](https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates)|[![Blazor NuGet Preview Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/latest?icon=nuget)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/absoluteLatest)|
-|[Windows Forms](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|[![WinForms Blazor Stable Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|[![WinForms Blazor Preview Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/latest?icon=nuget)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/absoluteLatest)|
-|[WPF](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|[![WPF Blazor Stable Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|[![WPF Blazor Preview Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/latest?icon=nuget)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/absoluteLatest)|
+|[Unified Package](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)|[![Blazor NuGet Stable Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)<br />[![Blazor Desktop Templates - VS Marketplace](https://badgen.net/vs-marketplace/v/egvijayanand.blazor-desktop-templates?icon=visualstudio)](https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates)|<!-- [![Blazor NuGet Preview Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/latest?icon=nuget)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/absoluteLatest) --> - |
+|[Windows Forms](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|[![WinForms Blazor Stable Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|<!-- [![WinForms Blazor Preview Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/latest?icon=nuget)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/absoluteLatest) --> - |
+|[WPF](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|[![WPF Blazor Stable Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/?icon=nuget)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|<!-- [![WPF Blazor Preview Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/latest?icon=nuget)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/absoluteLatest) --> - |
 
 Templates made available for working with **Blazor components in desktop applications such as Windows Forms and WPF**.
 
@@ -53,11 +53,15 @@ WPF: **wpf-blazor**
 
 So, .NET CLI command to create a new project from your favorite terminal would be as follows:
 
+By default, this creates a project that targets the latest stable version, `.NET 7` as of now.
+
 To create projects targeting different supported version of .NET, make use of the newly introduced `--framework` | `-f` parameter that takes `net6.0` / `net7.0` / `net8.0` as its options (with `net7.0` being the default value, if not specified).
 
 ```shell
 dotnet new winforms-blazor -f net6.0
 ```
+
+Being the default value, framework parameter is optional for `.NET 7`, (until `.NET 8` reaches stable).
 
 ```shell
 dotnet new winforms-blazor -f net7.0
@@ -71,6 +75,8 @@ dotnet new winforms-blazor -f net8.0
 dotnet new wpf-blazor -f net6.0
 ```
 
+Being the default value, framework parameter is optional for `.NET 7`, (until `.NET 8` reaches stable).
+
 ```shell
 dotnet new wpf-blazor -f net7.0
 ```
@@ -79,7 +85,7 @@ dotnet new wpf-blazor -f net7.0
 dotnet new wpf-blazor -f net8.0
 ```
 
-To abstract Razor components as a separate Razor class library, pass the below parameter while creating the project:
+Optionally, to abstract Razor components as a separate Razor class library, pass the below parameter while creating the project:
 
 `-rcl` | `--razor-class-library` - Default value is `false`
 
@@ -93,6 +99,32 @@ For WPF:
 
 ```shell
 dotnet new wpf-blazor -rcl
+```
+
+Has support for Item Templates too:
+
+* Windows Form with BlazorWebView
+  - Named as `winforms-bwv`
+* WPF Window with BlazorWebView
+  - Named as `wpf-bwv`
+
+Both of these templates takes two parameters:
+
+* `-n` | `--name` - The Name of the Item to create
+* `-na` | `--namespace` - The Namespace for the Item to create
+
+Note:
+
+*Ensure the project dependencies are restored before creating Item from these templates.*
+
+*While working with .NET 7 or higher SDK, the namespace parameter in short notation needs to be passed as `-p:na` (i.e., it needs to be prefixed with `-p:`).*
+
+```shell
+dotnet new winforms-bwv -n MyForm -na BlazorApp
+```
+
+```shell
+dotnet new wpf-bwv -n MyWindow -na BlazorApp
 ```
 
 To uninstall the template package:
