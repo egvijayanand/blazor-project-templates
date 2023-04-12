@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+	<TemplateData>
+		<DefaultName>Form.cs</DefaultName>
+		<Name>Windows Form with BlazorWebView</Name>
+		<Description>A Windows Form for displaying content with BlazorWebView.</Description>
+		<ProjectType>CSharp</ProjectType>
+		<ProjectSubType>WinForms</ProjectSubType>
+		<SortOrder>100</SortOrder>
+		<Icon>__TemplateIcon.ico</Icon>
+	</TemplateData>
+	<TemplateContent>
+		<References />
+		<ProjectItem TargetFileName="$fileinputname$.cs" ReplaceParameters="true">WinFormsBlazorWebView.cs</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.Designer.cs" ReplaceParameters="true">WinFormsBlazorWebView.Designer.cs</ProjectItem>
+	</TemplateContent>
+</VSTemplate>

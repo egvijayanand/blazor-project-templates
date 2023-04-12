@@ -1,5 +1,21 @@
-What's new in ver. 3.1.0.0:
+What's new in ver. 3.2.0.0:
 ---------------------------
+1. Template restructured to follow the same sample as other App Models.
+
+2. Templates updated to support .NET 8 Preview 3.
+
+3. Item templates for Windows Form with BlazorWebView and WPF Window with BlazorWebView.
+
+4. An option to create a separate Razor Class Library (RCL) to abstract the Razor components.
+
+-rcl | --razor-class-library - Default value is false.
+
+dotnet new winforms-blazor -n MyApp -rcl
+
+dotnet new wpf-blazor -n MyApp -rcl
+
+v3.1.0.0:
+
 1. Added the open-iconic artifacts to the solution
 
 2. While targeting .NET 8, the StartPath property is set to load a Razor component other than the one defined with default route address of '/'
