@@ -4,7 +4,8 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <PackageType>Template</PackageType>
         <PackageId>VijayAnand.Wpf.Blazor</PackageId>
-        <Title>WPF App with Blazor component (.NET 6/7/8 &amp; .NET MAUI)</Title>
+        <PackageVersion>3.0.0</PackageVersion>
+        <Title>WPF Blazor App</Title>
         <Authors>Vijay Anand E G</Authors>
         <Copyright>Copyright &#169; 2021-2023 Vijay Anand E G</Copyright>
         <Description>A project for hosting Blazor component in the WPF desktop application.</Description>
@@ -18,7 +19,7 @@
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/egvijayanand/blazor-project-templates</RepositoryUrl>
         <PackageTags>Desktop, WPF, Blazor, Windows, Template, BlazorWebView, Hybrid, Razor, Web</PackageTags>
-        <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/release-notes.txt"))</PackageReleaseNotes>
+        <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)\release-notes.txt"))</PackageReleaseNotes>
         <PackageReadmeFile>overview.md</PackageReadmeFile>
         <PackageProjectUrl>https://egvijayanand.in/</PackageProjectUrl>
         <PackageIcon>icon.png</PackageIcon>
@@ -26,7 +27,7 @@
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
     </PropertyGroup>
     <ItemGroup>
-        <Content Include="BlazorWpf\**\*" Exclude="BlazorWpf\**\bin\**;BlazorWpf\**\obj\**" />
+        <Content Include="BlazorWpf\**\*;WpfBlazorWebView\**\*" Exclude="**\bin\**;**\obj\**" />
         <Compile Remove="**\*" />
         <None Include="overview.md" Pack="true" PackagePath="\" />
         <None Include="icon.png" Pack="true" PackagePath="" />

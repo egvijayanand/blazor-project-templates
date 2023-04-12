@@ -1,0 +1,67 @@
+{
+    "$schema": "https://json.schemastore.org/template",
+    "author": "Vijay Anand E G",
+    "defaultName": "Window1",
+    "classifications": [
+        "Windows",
+        "Desktop",
+        "WPF",
+        "Blazor",
+        "Window",
+        "Xaml"
+    ],
+    "identity": "VijayAnand.WpfBlazorWebView",
+    "groupIdentity": "VijayAnand.BlazorTemplates.BlazorWebView.Xaml",
+    "description": "An item template for WPF Window with BlazorWebView",
+    "name": "WPF Window with BlazorWebView",
+    "shortName": "wpf-bwv",
+    "sourceName": "WpfBlazorWebView.1",
+    "primaryOutputs": [
+        {
+            "path": "WpfBlazorWebView.1.xaml"
+        },
+        {
+            "path": "WpfBlazorWebView.1.xaml.cs"
+        }
+    ],
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "symbols": {
+        "namespace": {
+            "type": "parameter",
+            "replaces": "MyApp.Namespace",
+            "datatype": "text",
+            "description": "namespace for the generated code"
+        },
+        "rootNamespace": {
+            "type": "bind",
+            "binding": "msbuild:RootNamespace",
+            "replaces": "MyApp.LocalNamespace",
+            "defaultValue": "MyApp.Namespace"
+        },
+        "sdkVersion": {
+            "type": "bind",
+            "binding": "msbuild:NETCoreSdkVersion"
+        },
+        "Net7": {
+            "type": "generated",
+            "generator": "regexMatch",
+            "datatype": "bool",
+            "parameters": {
+                "pattern": "^(7\\.*\\.*-?.*)$",
+                "source": "sdkVersion"
+            }
+        },
+        "Net8": {
+            "type": "generated",
+            "generator": "regexMatch",
+            "datatype": "bool",
+            "parameters": {
+                "pattern": "^(8\\.*\\.*-?.*)$",
+                "source": "sdkVersion"
+            }
+        }
+    }
+}
