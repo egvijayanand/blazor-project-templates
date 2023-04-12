@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+	<TemplateData>
+		<DefaultName>Window.cs</DefaultName>
+		<Name>WPF Window with BlazorWebView</Name>
+		<Description>A WPF Window for displaying content with BlazorWebView.</Description>
+		<ProjectType>CSharp</ProjectType>
+		<ProjectSubType>WPF</ProjectSubType>
+		<SortOrder>100</SortOrder>
+		<Icon>__TemplateIcon.ico</Icon>
+	</TemplateData>
+	<TemplateContent>
+		<References/>
+		<ProjectItem TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">WpfBlazorWebView.xaml</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">WpfBlazorWebView.xaml.cs</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
