@@ -53,7 +53,7 @@
 		</Compile>
 	</ItemGroup>
 	<ItemGroup>
-		<None Include="Assets\VijayAnand.BlazorTemplates.3.2.1.nupkg" />
+		<None Include="Assets\VijayAnand.BlazorTemplates.3.2.2.nupkg" />
 		<Content Include="ItemTemplates\WinFormsBlazorWebView.zip">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<IncludeInVSIX>true</IncludeInVSIX>
