@@ -20,7 +20,7 @@ public static class Startup
         Services = host.Services;
     }
 
-    private static void WireupServices(HostBuilderContext context, IServiceCollection services)
+    private static void WireupServices(IServiceCollection services)
     {
         services.AddWpfBlazorWebView();
         services.AddSingleton<WeatherForecastService>();
