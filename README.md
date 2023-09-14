@@ -53,19 +53,19 @@ WPF: **wpf-blazor**
 
 So, .NET CLI command to create a new project from your favorite terminal would be as follows:
 
-By default, this creates a project that targets the latest stable version, `.NET 7` as of now.
+By default, this creates a project that targets the Go-Live supported version, `.NET 8` as of now.
 
-To create projects targeting different supported version of .NET, make use of the newly introduced `--framework` | `-f` parameter that takes `net6.0` / `net7.0` / `net8.0` as its options (with `net7.0` being the default value, if not specified).
+To create projects targeting different supported version of .NET, make use of the Framework parameter (`--framework` | `-f`) that takes `net6.0` / `net7.0` / `net8.0` as its options (with `net8.0` being the default value, if not specified).
 
 ```shell
 dotnet new winforms-blazor -f net6.0
 ```
 
-Being the default value, framework parameter is optional for `.NET 7`, (until `.NET 8` reaches stable).
-
 ```shell
 dotnet new winforms-blazor -f net7.0
 ```
+
+Being the default value, framework parameter is optional for `.NET 8`.
 
 ```shell
 dotnet new winforms-blazor -f net8.0
@@ -75,11 +75,11 @@ dotnet new winforms-blazor -f net8.0
 dotnet new wpf-blazor -f net6.0
 ```
 
-Being the default value, framework parameter is optional for `.NET 7`, (until `.NET 8` reaches stable).
-
 ```shell
 dotnet new wpf-blazor -f net7.0
 ```
+
+Being the default value, framework parameter is optional for `.NET 8`.
 
 ```shell
 dotnet new wpf-blazor -f net8.0
