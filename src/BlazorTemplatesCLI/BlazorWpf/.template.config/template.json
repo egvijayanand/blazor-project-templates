@@ -15,14 +15,15 @@
     "sourceName": "BlazorWpf.1",
     "tags": {
         "language": "C#",
-        "type": "project",
+        "type": "solution",
         "vs_parametersToHide": "no-solution-file"
     },
     "preferNameDirectory": true,
     "guids": [
         "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC",
         "F7B43479-A7C7-4021-BDD2-2C7F90604B4A",
-        "A5AE4880-77B8-43F6-B7F9-76D6F94D54A6"
+        "A5AE4880-77B8-43F6-B7F9-76D6F94D54A6",
+        "1D17E9ED-22F1-4992-AE45-B8507EFD6950"
     ],
     "symbols": {
         "Framework": {
@@ -53,8 +54,15 @@
             "type": "parameter",
             "datatype": "bool",
             "defaultValue": "false",
-            "description": "Option to create a Razor class library to abstract Razor components.",
-            "displayName": "Option to create a _Razor class library to abstract Razor components"
+            "description": "Option to create a Razor Class Library (RCL) to abstract Razor components.",
+            "displayName": "Option to create a _Razor Class Library (RCL) to abstract Razor components"
+        },
+        "central-pkg-mgmt": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Option to configure NuGet Central Package Management (CPM).",
+            "displayName": "Option to configure NuGet Central Package Management (CPM)"
         },
         "frameworkLower": {
             "type": "generated",
@@ -92,6 +100,10 @@
             "type": "computed",
             "value": "(razor-class-library)"
         },
+        "CentralPkgMgmt": {
+            "type": "computed",
+            "value": "(central-pkg-mgmt)"
+        },
         "HostIdentifier": {
             "type": "bind",
             "binding": "HostIdentifier"
@@ -116,6 +128,12 @@
                     "condition": "(no-solution-file || !(HostIdentifier == \"dotnetcli\" || HostIdentifier == \"dotnetcli-preview\"))",
                     "exclude": [
                         "BlazorWpf.1.sln"
+                    ]
+                },
+                {
+                    "condition": "(!CentralPkgMgmt || !(HostIdentifier == \"dotnetcli\" || HostIdentifier == \"dotnetcli-preview\"))",
+                    "exclude": [
+                        "Directory.Packages.props"
                     ]
                 },
                 {

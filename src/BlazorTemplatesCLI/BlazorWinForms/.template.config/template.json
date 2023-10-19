@@ -15,14 +15,15 @@
     "sourceName": "BlazorWinForms.1",
     "tags": {
         "language": "C#",
-        "type": "project",
+        "type": "solution",
         "vs_parametersToHide": "no-solution-file"
     },
     "preferNameDirectory": true,
     "guids": [
         "FAE04EC0-301F-11D3-BF4B-00C04F79EFBC",
         "BFE86658-D849-4D16-9254-B6375A7C11E5",
-        "C94ED45B-38CD-4ACB-B35D-71D65C816C27"
+        "C94ED45B-38CD-4ACB-B35D-71D65C816C27",
+        "1D17E9ED-22F1-4992-AE45-B8507EFD6950"
     ],
     "symbols": {
         "Framework": {
@@ -53,8 +54,15 @@
             "type": "parameter",
             "datatype": "bool",
             "defaultValue": "false",
-            "description": "Option to create a Razor class library to abstract Razor components.",
-            "displayName": "Option to create a _Razor class library to abstract Razor components"
+            "description": "Option to create a Razor Class Library (RCL) to abstract Razor components.",
+            "displayName": "Option to create a _Razor Class Library (RCL) to abstract Razor components"
+        },
+        "central-pkg-mgmt": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Option to configure NuGet Central Package Management (CPM).",
+            "displayName": "Option to configure NuGet Central Package Management (CPM)"
         },
         "frameworkLower": {
             "type": "generated",
@@ -92,6 +100,10 @@
             "type": "computed",
             "value": "(razor-class-library)"
         },
+        "CentralPkgMgmt": {
+            "type": "computed",
+            "value": "(central-pkg-mgmt)"
+        },
         "HostIdentifier": {
             "type": "bind",
             "binding": "HostIdentifier"
@@ -116,6 +128,12 @@
                     "condition": "(no-solution-file || !(HostIdentifier == \"dotnetcli\" || HostIdentifier == \"dotnetcli-preview\"))",
                     "exclude": [
                         "BlazorWinForms.1.sln"
+                    ]
+                },
+                {
+                    "condition": "(!CentralPkgMgmt || !(HostIdentifier == \"dotnetcli\" || HostIdentifier == \"dotnetcli-preview\"))",
+                    "exclude": [
+                        "Directory.Packages.props"
                     ]
                 },
                 {

@@ -5,7 +5,7 @@
         {
             "id": "razor-class-library",
             "name": {
-                "text": "Create a _Razor class library to abstract Razor components."
+                "text": "Create a _Razor Class Library (RCL) to abstract Razor components."
             },
             "isVisible": true,
             "defaultValue": "false"
