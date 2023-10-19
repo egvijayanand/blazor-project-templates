@@ -7,6 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWpf.1", "BlazorWpf.1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWpf.1.RazorLib", "BlazorWpf.1.RazorLib\BlazorWpf.1.RazorLib.csproj", "{A5AE4880-77B8-43F6-B7F9-76D6F94D54A6}"
 EndProject
+#if (CentralPkgMgmt)
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D17E9ED-22F1-4992-AE45-B8507EFD6950}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+#endif
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

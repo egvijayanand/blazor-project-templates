@@ -17,6 +17,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <!--#if (CentralPkgMgmt)-->
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" />
+        <!--#else-->
         <!--#if (Net8)-->
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="8.0.0-*" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0-*" />
@@ -26,6 +30,7 @@
         <!--#else-->
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="6.0.*" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.*" />
+        <!--#endif-->
         <!--#endif-->
     </ItemGroup>
     <!--#if (RazorLib)-->

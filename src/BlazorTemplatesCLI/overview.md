@@ -19,7 +19,7 @@ dotnet new update
 
 To make use of the template:
 
-By default, this creates a solution that targets the latest stable version, `.NET 7` as of now.
+By default, this creates a solution that targets the Go-Live supported version, `.NET 8` as of now.
 
 For WinForms:
 
@@ -33,14 +33,14 @@ For WPF:
 dotnet new wpf-blazor
 ```
 
-To target `.NET 6` / `.NET 8`, pass the corresponding value (`net6.0` / `net8.0`) to the framework (`--framework` | `-f`) parameter, example shown below.
+To target `.NET 6` / `.NET 7`, pass the corresponding value (`net6.0` / `net7.0`) to the framework (`--framework` | `-f`) parameter, example shown below.
 
 ```shell
-dotnet new winforms-blazor -f net8.0
+dotnet new winforms-blazor -f net7.0
 ```
 
 ```shell
-dotnet new wpf-blazor -f net8.0
+dotnet new wpf-blazor -f net7.0
 ```
 
 Optionally, to abstract Razor components as a separate Razor Class Library (RCL), pass the below parameter while creating the project:
@@ -57,6 +57,22 @@ For WPF:
 
 ```shell
 dotnet new wpf-blazor -rcl
+```
+
+Optionally, to make use of NuGet Central Package Management (CPM) feature, pass the below parameter while creating the project (_Supported from v3.5.0-preview.1 onwards_):
+
+`-cpm` | `--central-pkg-mgmt` - Default value is `false`
+
+For WinForms:
+
+```shell
+dotnet new winforms-blazor -cpm
+```
+
+For WPF:
+
+```shell
+dotnet new wpf-blazor -cpm
 ```
 
 Has support for Item Templates too:
