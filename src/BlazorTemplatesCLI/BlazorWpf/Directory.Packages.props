@@ -4,15 +4,15 @@
     </PropertyGroup>
     <ItemGroup>
         <!--#if (Net8)-->
-        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0-rc.2.23480.2" />
-        <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="8.0.0-rc.2.9373" />
-        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0-rc.2.23479.6" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="8.0.3" />
+        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
         <!--#elif (Net7)-->
-        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="7.0.12" />
-        <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="7.0.96" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="7.0.14" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="7.0.101" />
         <PackageVersion Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
         <!--#else-->
-        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="6.0.23" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="6.0.25" />
         <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="6.0.553" />
         <PackageVersion Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
         <!--#endif-->
