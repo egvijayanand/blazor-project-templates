@@ -8,7 +8,7 @@ dotnet new install VijayAnand.WindowsForms.Blazor
 
 To make use of the template:
 
-By default, this creates a solution that targets the Go-Live supported version, `.NET 8` as of now.
+By default, this creates a solution that targets `.NET 8`.
 
 ```shell
 dotnet new winforms-blazor
@@ -28,7 +28,7 @@ Optionally, to abstract Razor components as a separate Razor Class Library (RCL)
 dotnet new winforms-blazor -rcl
 ```
 
-Optionally, to make use of NuGet Central Package Management (CPM) feature, pass the below parameter while creating the project (_Supported from v3.5.0-preview.1 onwards_):
+Optionally, to make use of NuGet Central Package Management (CPM) feature, pass the below parameter while creating the project (_Supported from v3.5.0 onwards_):
 
 `-cpm` | `--central-pkg-mgmt` - Default value is `false`
 
