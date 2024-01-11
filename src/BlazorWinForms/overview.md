@@ -41,17 +41,22 @@ Has support for Item Template too:
 * Windows Form with BlazorWebView 
   - Named as `winforms-bwv`
 
-It takes two parameters:
+It requires a parameter:
 
 * `-n` | `--name` - The Name of the Item to create
+
+<!--
 * `-na` | `--namespace` - The Namespace for the Item to create
+-->
 
 Note:
 
 *Ensure the project dependencies are restored before creating Item from these templates.*
 
+<!--
 *While working with .NET 7 or higher SDK, the namespace parameter in short notation needs to be passed as `-p:na` (i.e., it needs to be prefixed with `-p:`).*
+-->
 
 ```shell
-dotnet new winforms-bwv -n MyForm -na BlazorApp
+dotnet new winforms-bwv -n MyForm
 ```

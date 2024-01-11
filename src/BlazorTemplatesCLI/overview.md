@@ -82,23 +82,28 @@ Has support for Item Templates too:
 * WPF Window with BlazorWebView
   - Named as `wpf-bwv`
 
-Both of these templates takes two parameters:
+Both of these templates require a parameter:
 
 * `-n` | `--name` - The Name of the Item to create
+
+<!--
 * `-na` | `--namespace` - The Namespace for the Item to create
+-->
 
 Note:
 
 *Ensure the project dependencies are restored before creating Item from these templates.*
 
+<!--
 *While working with .NET 7 or higher SDK, the namespace parameter in short notation needs to be passed as `-p:na` (i.e., it needs to be prefixed with `-p:`).*
+-->
 
 ```shell
-dotnet new winforms-bwv -n MyForm -na BlazorApp
+dotnet new winforms-bwv -n MyForm
 ```
 
 ```shell
-dotnet new wpf-bwv -n MyWindow -na BlazorApp
+dotnet new wpf-bwv -n MyWindow
 ```
 
 To uninstall the template package:

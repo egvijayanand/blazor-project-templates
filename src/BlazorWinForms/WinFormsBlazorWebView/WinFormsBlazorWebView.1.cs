@@ -12,11 +12,9 @@ namespace MyApp.Namespace
             {
                 Dock = DockStyle.Fill,
                 HostPage = "wwwroot/index.html",
-#if Net8
                 Services = Startup.Services!,
+#if Net8
                 StartPath = "/"
-#else
-                Services = Startup.Services!
 #endif
             };
 
