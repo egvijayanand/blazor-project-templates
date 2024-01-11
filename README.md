@@ -59,34 +59,34 @@ To create projects targeting different supported version of .NET, make use of th
 
 WinForms:
 
-```shell
-dotnet new winforms-blazor -f net6.0
-```
-
-```shell
-dotnet new winforms-blazor -f net7.0
-```
-
 Being the default value, framework parameter is optional for `.NET 8`.
 
 ```shell
 dotnet new winforms-blazor -f net8.0
 ```
 
-WPF:
+```shell
+dotnet new winforms-blazor -f net7.0
+```
 
 ```shell
-dotnet new wpf-blazor -f net6.0
+dotnet new winforms-blazor -f net6.0
+```
+
+WPF:
+
+Being the default value, framework parameter is optional for `.NET 8`.
+
+```shell
+dotnet new wpf-blazor -f net8.0
 ```
 
 ```shell
 dotnet new wpf-blazor -f net7.0
 ```
 
-Being the default value, framework parameter is optional for `.NET 8`.
-
 ```shell
-dotnet new wpf-blazor -f net8.0
+dotnet new wpf-blazor -f net6.0
 ```
 
 Optionally, to abstract Razor components as a separate Razor Class Library (RCL), pass the below parameter while creating the project:
@@ -105,7 +105,7 @@ For WPF:
 dotnet new wpf-blazor -rcl
 ```
 
-Optionally, to make use of NuGet Central Package Management feature, pass the below parameter while creating the project (_Supported from v3.5.0 onwards_):
+Optionally, to make use of NuGet Central Package Management (CPM) feature, pass the below parameter while creating the project (_Supported from v3.5.0 onwards_):
 
 `-cpm` | `--central-pkg-mgmt` - Default value is `false`
 
@@ -121,6 +121,8 @@ For WPF:
 dotnet new wpf-blazor -cpm
 ```
 
+Project options can also be used in combination like `-rcl` and `-cpm`.
+
 Has support for Item Templates too:
 
 * Windows Form with BlazorWebView
@@ -128,23 +130,28 @@ Has support for Item Templates too:
 * WPF Window with BlazorWebView
   - Named as `wpf-bwv`
 
-Both of these templates takes two parameters:
+Both of these templates require a parameter:
 
 * `-n` | `--name` - The Name of the Item to create
+
+<!--
 * `-na` | `--namespace` - The Namespace for the Item to create
+-->
 
 Note:
 
 *Ensure the project dependencies are restored before creating Item from these templates.*
 
+<!--
 *While working with .NET 7 or higher SDK, the namespace parameter in short notation needs to be passed as `-p:na` (i.e., it needs to be prefixed with `-p:`).*
+-->
 
 ```shell
-dotnet new winforms-bwv -n MyForm -na BlazorApp
+dotnet new winforms-bwv -n MyForm
 ```
 
 ```shell
-dotnet new wpf-bwv -n MyWindow -na BlazorApp
+dotnet new wpf-bwv -n MyWindow
 ```
 
 To uninstall the template package:
