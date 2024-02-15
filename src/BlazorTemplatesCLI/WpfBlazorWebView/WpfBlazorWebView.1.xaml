@@ -3,7 +3,7 @@
     x:Class="MyApp.Namespace.WpfBlazorWebView__1"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:b="clr-namespace:Microsoft.AspNetCore.Components.WebView.Wpf;assembly=Microsoft.AspNetCore.Components.WebView.Wpf"
+    xmlns:b="http://schemas.microsoft.com/winfx/2006/xaml/presentation/blazor"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:MyApp.LocalNamespace"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -13,7 +13,7 @@
     mc:Ignorable="d">
     <Window.Content>
         <Grid>
-<!--#if (Net8)-->
+<!--#if (Net8OrLater)-->
             <b:BlazorWebView
                 HostPage="wwwroot/index.html"
                 Services="{StaticResource services}"

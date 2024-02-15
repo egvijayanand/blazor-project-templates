@@ -12,7 +12,7 @@ public partial class Form1 : Form
         {
             Dock = DockStyle.Fill,
             HostPage = "wwwroot/index.html",
-#if Net8
+#if Net8OrLater
             Services = Startup.Services!,
             StartPath = "/counter"
 #else
