@@ -1,5 +1,11 @@
-What's new in ver. 3.6.1.0:
+Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
+
+What's new in ver. 4.0.0.0:
 ---------------------------
+Support for creating .NET Blazor Hybrid projects on .NET 9 Previews
+
+v3.6.1.0:
+
 Updated the WinForms and WPF Blazor hybrid NuGet package reference to .NET MAUI 8 SR1 (8.0.6)
 
 For more details, check this article:
