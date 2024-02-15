@@ -55,7 +55,7 @@ So, .NET CLI command to create a new project from your favorite terminal would b
 
 By default, this creates a project that targets `.NET 8`.
 
-To create projects targeting different supported version of .NET, make use of the Framework parameter (`--framework` | `-f`) that takes `net6.0` / `net7.0` / `net8.0` as its options (with `net8.0` being the default value, if not specified).
+To create projects targeting different supported version of .NET, make use of the Framework parameter (`--framework` | `-f`) that takes `net6.0` / `net7.0` / `net8.0` / `net9.0` as its options (with `net8.0` being the default value, if not specified).
 
 WinForms:
 
@@ -63,6 +63,10 @@ Being the default value, framework parameter is optional for `.NET 8`.
 
 ```shell
 dotnet new winforms-blazor -f net8.0
+```
+
+```shell
+dotnet new winforms-blazor -f net9.0
 ```
 
 ```shell
@@ -79,6 +83,10 @@ Being the default value, framework parameter is optional for `.NET 8`.
 
 ```shell
 dotnet new wpf-blazor -f net8.0
+```
+
+```shell
+dotnet new wpf-blazor -f net9.0
 ```
 
 ```shell

@@ -33,14 +33,22 @@ For WPF:
 dotnet new wpf-blazor
 ```
 
-To target `.NET 6` / `.NET 7`, pass the corresponding value (`net6.0` / `net7.0`) to the framework (`--framework` | `-f`) parameter, example shown below.
+To target `.NET 6` / `.NET 7` / `.NET 9`, pass the corresponding value (`net6.0` / `net7.0` / `net9.0`) to the framework (`--framework` | `-f`) parameter, example shown below.
 
 ```shell
 dotnet new winforms-blazor -f net7.0
 ```
 
 ```shell
+dotnet new winforms-blazor -f net9.0
+```
+
+```shell
 dotnet new wpf-blazor -f net7.0
+```
+
+```shell
+dotnet new wpf-blazor -f net9.0
 ```
 
 Optionally, to abstract Razor components as a separate Razor Class Library (RCL), pass the below parameter while creating the project:

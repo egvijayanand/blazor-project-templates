@@ -1,7 +1,19 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
 
-What's new in ver. 3.6.1:
+What's new in ver. 4.0.0:
 -------------------------
+1. Support for creating .NET Blazor Hybrid project on .NET 9 Previews.
+
+For this, have introduced an additional option to the framework parameter - net9.0
+
+Note: The default value for the framework parameter remains as net8.0, which means to create a project for .NET 9, an explicit value of net9.0 is to be passed.
+
+dotnet new wpf-blazor -o MyApp -f net9.0
+
+2. WPF Blazor namespace updated to URI based.
+
+v3.6.1:
+
 Updated the WPF Blazor hybrid NuGet package reference to .NET MAUI 8 SR1 (8.0.6)
 
 For more details, check this article:
