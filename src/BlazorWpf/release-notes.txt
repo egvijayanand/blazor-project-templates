@@ -2,7 +2,7 @@ Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for 
 
 What's new in ver. 4.0.0:
 -------------------------
-1. Support for creating .NET MAUI projects on .NET 9 Previews.
+1. Support for creating .NET Blazor Hybrid project on .NET 9 Previews.
 
 For this, have introduced an additional option to the framework parameter - net9.0
 
