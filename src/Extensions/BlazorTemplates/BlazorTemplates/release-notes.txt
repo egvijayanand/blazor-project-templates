@@ -1,7 +1,11 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
 
-What's new in ver. 4.0.0.0:
+What's new in ver. 4.1.0.0:
 ---------------------------
+Templates updated to support .NET 9 Preview 4 and latest .NET 8 release
+
+v4.0.0.0:
+
 Support for creating .NET Blazor Hybrid projects on .NET 9 Previews
 
 v3.6.1.0:
