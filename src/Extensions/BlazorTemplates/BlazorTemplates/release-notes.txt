@@ -1,16 +1,22 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
 
-What's new in ver. 4.1.0.0:
+What's new in ver. 4.2.0.0:
 ---------------------------
-Templates updated to support .NET 9 Preview 4 and latest .NET 8 release
+Introduced using the NuGet CPM feature from within Visual Studio IDE.
+
+Templates updated to support .NET 9 Preview 5 and latest .NET 8 release.
+
+v4.1.0.0:
+
+Templates updated to support .NET 9 Preview 4 and latest .NET 8 release.
 
 v4.0.0.0:
 
-Support for creating .NET Blazor Hybrid projects on .NET 9 Previews
+Support for creating .NET Blazor Hybrid projects on .NET 9 Previews.
 
 v3.6.1.0:
 
-Updated the WinForms and WPF Blazor hybrid NuGet package reference to .NET MAUI 8 SR1 (8.0.6)
+Updated the WinForms and WPF Blazor hybrid NuGet package reference to .NET MAUI 8 SR1 (8.0.6).
 
 For more details, check this article:
 
