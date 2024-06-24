@@ -55,19 +55,19 @@
             "replaces": "DOTNET_TFM",
             "defaultValue": "net8.0"
         },
-        "razor-class-library": {
-            "type": "parameter",
-            "datatype": "bool",
-            "defaultValue": "false",
-            "description": "Option to create a Razor Class Library (RCL) to abstract Razor components.",
-            "displayName": "Option to create a _Razor Class Library (RCL) to abstract Razor components"
-        },
         "central-pkg-mgmt": {
             "type": "parameter",
             "datatype": "bool",
             "defaultValue": "false",
             "description": "Option to configure NuGet Central Package Management (CPM).",
             "displayName": "Option to configure NuGet Central Package Management (CPM)"
+        },
+        "razor-class-library": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Option to create a Razor Class Library (RCL) to abstract Razor components.",
+            "displayName": "Option to create a _Razor Class Library (RCL) to abstract Razor components"
         },
         "frameworkLower": {
             "type": "generated",
@@ -117,6 +117,10 @@
             "type": "computed",
             "value": "(central-pkg-mgmt)"
         },
+        "SolnFile": {
+            "type": "computed",
+            "value": "(!no-solution-file)"
+        },
         "HostIdentifier": {
             "type": "bind",
             "binding": "HostIdentifier"
@@ -138,22 +142,19 @@
             ],
             "modifiers": [
                 {
-                    "condition": "(no-solution-file || !(HostIdentifier == \"dotnetcli\" || HostIdentifier == \"dotnetcli-preview\"))",
+                    "condition": "(!(SolnFile || RazorLib))",
                     "exclude": [
                         "BlazorWpf.1.sln"
                     ]
                 },
                 {
-                    "condition": "(!CentralPkgMgmt || !(HostIdentifier == \"dotnetcli\" || HostIdentifier == \"dotnetcli-preview\"))",
+                    "condition": "(!CentralPkgMgmt)",
                     "exclude": [
                         "Directory.Packages.props"
                     ]
                 },
                 {
                     "condition": "(RazorLib)",
-                    "exclude": [
-                        "BlazorWpf.1.sln"
-                    ],
                     "rename": {
                         "Data/WeatherForecast.cs": "BlazorWpf.1.RazorLib/Data/WeatherForecast.cs",
                         "Data/WeatherForecastService.cs": "BlazorWpf.1.RazorLib/Data/WeatherForecastService.cs",
@@ -195,16 +196,14 @@
                         "wwwroot/css/open-iconic/README.md": "BlazorWpf.1/wwwroot/css/open-iconic/README.md",
                         "wwwroot/css/app.css": "BlazorWpf.1/wwwroot/css/app.css",
                         "wwwroot/favicon.ico": "BlazorWpf.1/wwwroot/favicon.ico",
-                        "wwwroot/index.html": "BlazorWpf.1/wwwroot/index.html",
-                        "BlazorWpf.1.RazorLib.sln": "BlazorWpf.1.sln"
+                        "wwwroot/index.html": "BlazorWpf.1/wwwroot/index.html"
                     }
                 },
                 {
                     "condition": "(!RazorLib)",
                     "exclude": [
                         "BlazorWpf.1.RazorLib/BlazorWpf.1.RazorLib.csproj",
-                        "BlazorWpf.1.RazorLib/_Imports.razor",
-                        "BlazorWpf.1.RazorLib.sln"
+                        "BlazorWpf.1.RazorLib/_Imports.razor"
                     ],
                     "rename": {
                         "BlazorWpf.1/_Imports.razor": "_Imports.razor"

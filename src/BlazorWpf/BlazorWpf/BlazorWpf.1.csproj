@@ -15,6 +15,12 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>BlazorWpf._1</RootNamespace>
     </PropertyGroup>
+    <!--#if (CentralPkgMgmt && SolnFile && !RazorLib)-->
+
+    <ItemGroup>
+        <None Remove="Directory.Packages.props" />
+    </ItemGroup>
+    <!--#endif-->
 
     <ItemGroup>
         <!--#if (CentralPkgMgmt)-->
