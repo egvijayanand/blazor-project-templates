@@ -45,6 +45,24 @@ dotnet new update --check-only
 dotnet new update
 ```
 
+And from [v4.3.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.3.0) of the template package, support for XML-based solution file (slnx) format.
+
+* SLNX Solution File Format (Short notation: -slnx):
+
+  Introduces support for the new, simplified, and easily understandable XML-based solution file format.
+
+  This would be an explicit option since the SLNX feature is currently in the preview stage and is only supported on VS2022.
+
+  `-slnx` | `--use-slnx` - Default value is `false`.
+
+  ```shell
+  dotnet new winforms-blazor -o MyApp -slnx
+  ```
+
+  ```shell
+  dotnet new wpf-blazor -o MyApp -slnx
+  ```
+
 #### Project names referenced by these templates:
 
 Windows Forms: **winforms-blazor**

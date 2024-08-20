@@ -3,6 +3,14 @@
     "icon": "ide/icon.png",
     "symbolInfo": [
         {
+            "id": "use-slnx",
+            "name": {
+                "text": "Use XML-based solution file (sln_x)."
+            },
+            "isVisible": true,
+            "defaultValue": "false"
+        },
+        {
             "id": "central-pkg-mgmt",
             "name": {
                 "text": "Use _NuGet Central Package Management (CPM)"

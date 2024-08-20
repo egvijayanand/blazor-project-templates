@@ -1,7 +1,19 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
 
-What's new in ver. 4.2.0:
+What's new in ver. 4.3.0:
 -------------------------
+1. Templates updated to support .NET 9 Preview 7 and the latest .NET 8 release.
+
+2. Introduced an option to support the XML-based solution file (slnx) format.
+
+This would be an explicit option since the SLNX feature is currently in the preview stage and is only supported on VS2022.
+
+-slnx | --use-slnx - Default value is false
+
+dotnet new wpf-blazor -o MyApp -slnx
+
+v4.2.0:
+
 1. Introduced using the NuGet CPM feature from within Visual Studio IDE.
 
 2. Templates updated to support .NET 9 Preview 5 and latest .NET 8 release.
