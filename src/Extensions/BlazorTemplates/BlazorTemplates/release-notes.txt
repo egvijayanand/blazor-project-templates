@@ -1,7 +1,19 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
 
-What's new in ver. 4.2.0.0:
+What's new in ver. 4.3.0.0:
 ---------------------------
+1. The Blazor Desktop Templates Pack VS extension is now supported on both x64 and ARM64 installations of Visual Studio 2022. Happy coding!
+
+Consequently, the minimum supported version of Visual Studio 2022 will be v17.6 or higher.
+
+2. Templates updated to support .NET 9 Preview 7 and the latest .NET 8 release.
+
+3. Introduced an option to support the XML-based solution file (slnx) format.
+
+This would be an explicit option since the SLNX feature is currently in the preview stage and is only supported on VS2022.
+
+v4.2.0.0:
+
 Introduced using the NuGet CPM feature from within Visual Studio IDE.
 
 Templates updated to support .NET 9 Preview 5 and latest .NET 8 release.
@@ -62,12 +74,6 @@ v3.2.0.0:
 
 4. An option to create a separate Razor Class Library (RCL) to abstract the Razor components.
 
--rcl | --razor-class-library - Default value is false.
-
-dotnet new winforms-blazor -n MyApp -rcl
-
-dotnet new wpf-blazor -n MyApp -rcl
-
 v3.1.0.0:
 
 1. Added the open-iconic artifacts to the solution
@@ -97,14 +103,6 @@ Blazor desktop templates for Windows Forms and WPF.
 Currently targeting .NET 6 / 7 and the corresponding .NET MAUI release.
 
 A parameter named framework has been introduced that takes either net6.0 or net7.0 as its options (with net7.0 being the default value).
-
-dotnet new winforms-blazor --framework net6.0
-
-dotnet new winforms-blazor -f net7.0
-
-dotnet new wpf-blazor --framework net6.0
-
-dotnet new wpf-blazor -f net7.0
 
 For the articles on working with .NET MAUI and Blazor, stay connected with my blog: https://egvijayanand.in/
 
