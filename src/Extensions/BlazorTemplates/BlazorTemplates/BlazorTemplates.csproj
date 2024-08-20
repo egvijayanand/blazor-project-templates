@@ -53,7 +53,7 @@
 		</Compile>
 	</ItemGroup>
 	<ItemGroup>
-		<None Include="Assets\VijayAnand.BlazorTemplates.4.2.0.nupkg" />
+		<None Include="Assets\VijayAnand.BlazorTemplates.4.3.0.nupkg" />
 		<Content Include="ItemTemplates\WinFormsBlazorWebView.zip">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<IncludeInVSIX>true</IncludeInVSIX>
@@ -91,10 +91,10 @@
 		<Reference Include="System.Design" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Community.VisualStudio.Toolkit.17" Version="17.0.507" ExcludeAssets="Runtime">
+		<PackageReference Include="Community.VisualStudio.Toolkit.17" Version="17.0.522" ExcludeAssets="Runtime">
 			<IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.10.2185">
+		<PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.11.435">
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
