@@ -45,7 +45,7 @@
     <!--#if (RazorLib)-->
 
     <ItemGroup>
-        <ProjectReference Include="..\BlazorWinForms.1.RazorLib\BlazorWinForms.1.RazorLib.csproj" />
+        <ProjectReference Include="..\SAFE-NAME.RazorLib\SAFE-NAME.RazorLib.csproj" />
     </ItemGroup>
     <!--#endif-->
 

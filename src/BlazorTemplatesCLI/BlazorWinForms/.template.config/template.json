@@ -55,6 +55,13 @@
             "replaces": "DOTNET_TFM",
             "defaultValue": "net8.0"
         },
+        "use-slnx": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Option to use XML-based solution file (slnx).",
+            "displayName": "Option to use XML-based solution file (sln_x)"
+        },
         "central-pkg-mgmt": {
             "type": "parameter",
             "datatype": "bool",
@@ -105,6 +112,13 @@
             "defaultValue": "false",
             "description": "Option to skip creating a solution file."
         },
+        "XmlEncodedName": {
+            "type": "derived",
+            "datatype": "string",
+            "replaces": "SAFE-NAME",
+            "valueSource": "name",
+            "valueTransform": "xmlEncode"
+        },
         "NonWindows": {
             "type": "computed",
             "value": "(enable-windows-targeting)"
@@ -120,6 +134,10 @@
         "SolnFile": {
             "type": "computed",
             "value": "(!no-solution-file)"
+        },
+        "UseSlnx": {
+            "type": "computed",
+            "value": "(use-slnx)"
         },
         "HostIdentifier": {
             "type": "bind",
@@ -144,7 +162,23 @@
                 {
                     "condition": "(!(SolnFile || RazorLib))",
                     "exclude": [
+                        "BlazorWinForms.1.sln",
+                        "BlazorWinForms.1.xml"
+                    ]
+                },
+                {
+                    "condition": "(UseSlnx)",
+                    "exclude": [
                         "BlazorWinForms.1.sln"
+                    ],
+                    "rename": {
+                        "BlazorWinForms.1.xml": "BlazorWinForms.1.slnx"
+                    }
+                },
+                {
+                    "condition": "(!UseSlnx)",
+                    "exclude": [
+                        "BlazorWinForms.1.xml"
                     ]
                 },
                 {
