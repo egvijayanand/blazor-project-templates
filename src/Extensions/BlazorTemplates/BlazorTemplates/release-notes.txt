@@ -1,7 +1,13 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
 
-What's new in ver. 4.3.0.0:
+What's new in ver. 4.4.0.0:
 ---------------------------
+1. Templates updated to support .NET 9 RC1 release.
+
+2. Introduced an option to add a reference to the CommunityToolkit.Mvvm NuGet package to work with MVVM.
+
+v4.3.0.0:
+
 1. The Blazor Desktop Templates Pack VS extension is now supported on both x64 and ARM64 installations of Visual Studio 2022. Happy coding!
 
 Consequently, the minimum supported version of Visual Studio 2022 will be v17.6 or higher.

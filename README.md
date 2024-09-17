@@ -71,7 +71,7 @@ And from [v4.4.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.4.
 
 * Include MVVM Toolkit (Short notation: `-imt`):
 
-  Introduced an option to add a reference to the [CommunityToolkit.Mvvm](https://www.nuget.org/packages/CommunityToolkit.Mvvm) NuGet package to work with MVVM.
+  Introduces an option to add a reference to the [CommunityToolkit.Mvvm](https://www.nuget.org/packages/CommunityToolkit.Mvvm) NuGet package to work with MVVM.
 
   `-imt` | `--include-mvvm-toolkit` - Default value is `false`.
 
