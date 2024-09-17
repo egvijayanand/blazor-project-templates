@@ -4,7 +4,7 @@
 
 |App Model|Stable Channel|Preview Channel|
 |:---:|:---:|:---:|
-|[Unified Package](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)|[![Blazor NuGet Stable Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/?icon=nuget&foo=bar)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)<br />[![Blazor Desktop Templates - VS Marketplace](https://badgen.net/vs-marketplace/v/egvijayanand.blazor-desktop-templates?icon=visualstudio)](https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates)| - <!--[![Blazor NuGet Preview Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/pre?icon=nuget&foo=bar)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/absoluteLatest)-->|
+|[Unified Package](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)|[![Blazor NuGet Stable Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/?icon=nuget&foo=bar)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/)<br />[![Blazor Desktop Templates - VS Marketplace](https://badgen.net/vs-marketplace/v/egvijayanand.blazor-desktop-templates?icon=visualstudio&foo=bar)](https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates)| - <!--[![Blazor NuGet Preview Package](https://badgen.net/nuget/v/VijayAnand.BlazorTemplates/pre?icon=nuget&foo=bar)](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/absoluteLatest)-->|
 |[Windows Forms](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)|[![WinForms Blazor Stable Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/?icon=nuget&foo=bar)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/)| - <!--[![WinForms Blazor Preview Package](https://badgen.net/nuget/v/VijayAnand.WindowsForms.Blazor/pre?icon=nuget&foo=bar)](https://www.nuget.org/packages/VijayAnand.WindowsForms.Blazor/absoluteLatest)-->|
 |[WPF](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)|[![WPF Blazor Stable Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/?icon=nuget&foo=bar)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/)| - <!--[![WPF Blazor Preview Package](https://badgen.net/nuget/v/VijayAnand.Wpf.Blazor/pre?icon=nuget&foo=bar)](https://www.nuget.org/packages/VijayAnand.Wpf.Blazor/absoluteLatest)-->|
 
@@ -51,7 +51,7 @@ dotnet new update
 
 And from [v4.3.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.3.0) of the template package, support for XML-based solution file (slnx) format.
 
-* SLNX Solution File Format (Short notation: -slnx):
+* SLNX Solution File Format (Short notation: `-slnx`):
 
   Introduces support for the new, simplified, and easily understandable XML-based solution file format.
 
@@ -65,6 +65,22 @@ And from [v4.3.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.3.
 
   ```shell
   dotnet new wpf-blazor -o MyApp -slnx
+  ```
+
+And from [v4.4.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.4.0) of the template package, support for adding a reference to the MVVM toolkit.
+
+* Include MVVM Toolkit (Short notation: `-imt`):
+
+  Introduced an option to add a reference to the [CommunityToolkit.Mvvm](https://www.nuget.org/packages/CommunityToolkit.Mvvm) NuGet package to work with MVVM.
+
+  `-imt` | `--include-mvvm-toolkit` - Default value is `false`.
+
+  ```shell
+  dotnet new winforms-blazor -o MyApp -imt
+  ```
+
+  ```shell
+  dotnet new wpf-blazor -o MyApp -imt
   ```
 
 #### Project names referenced by these templates:

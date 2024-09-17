@@ -76,6 +76,13 @@
             "description": "Option to create a Razor Class Library (RCL) to abstract Razor components.",
             "displayName": "Option to create a _Razor Class Library (RCL) to abstract Razor components"
         },
+        "include-mvvm-toolkit": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Option to add CommunityToolkit.Mvvm (aka Microsoft MVVM Toolkit) NuGet package reference.",
+            "displayName": "Add CommunityToolkit.Mvvm (aka Microsoft MV_VM Toolkit) NuGet package reference"
+        },
         "frameworkLower": {
             "type": "generated",
             "generator": "casing",
@@ -130,6 +137,10 @@
         "CentralPkgMgmt": {
             "type": "computed",
             "value": "(central-pkg-mgmt)"
+        },
+        "AddMvvmToolkit": {
+            "type": "computed",
+            "value": "(include-mvvm-toolkit)"
         },
         "SolnFile": {
             "type": "computed",
@@ -240,6 +251,12 @@
                     "rename": {
                         "BlazorWinForms.1/_Imports.razor": "_Imports.razor"
                     }
+                },
+                {
+                    "condition": "(!AddMvvmToolkit)",
+                    "exclude": [
+                        "Imports.cs"
+                    ]
                 }
             ]
         }
