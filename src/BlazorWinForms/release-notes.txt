@@ -1,7 +1,17 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
 
-What's new in ver. 4.3.0:
+What's new in ver. 4.4.0:
 -------------------------
+1. Templates updated to support .NET 9 RC1 release.
+
+2. Introduced an option to add a reference to the CommunityToolkit.Mvvm NuGet package to work with MVVM.
+
+-imt | --include-mvvm-toolkit - Default value is false
+
+dotnet new winforms-blazor -o MyApp -imt
+
+v4.3.0:
+
 1. Templates updated to support .NET 9 Preview 7 and the latest .NET 8 release.
 
 2. Introduced an option to support the XML-based solution file (slnx) format.

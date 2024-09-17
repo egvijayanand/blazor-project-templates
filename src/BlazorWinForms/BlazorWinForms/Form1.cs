@@ -8,7 +8,7 @@ public partial class Form1 : Form
     {
         InitializeComponent();
 
-        var blazor = new BlazorWebView()
+        var bwv = new BlazorWebView()
         {
             Dock = DockStyle.Fill,
             HostPage = "wwwroot/index.html",
@@ -20,7 +20,7 @@ public partial class Form1 : Form
 #endif
         };
 
-        blazor.RootComponents.Add<Main>("#app");
-        Controls.Add(blazor);
+        bwv.RootComponents.Add<Main>("#app");
+        Controls.Add(bwv);
     }
 }

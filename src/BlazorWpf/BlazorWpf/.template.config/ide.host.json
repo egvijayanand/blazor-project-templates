@@ -5,7 +5,7 @@
         {
             "id": "use-slnx",
             "name": {
-                "text": "Use XML-based solution file (sln_x)."
+                "text": "Use _XML-based solution file (slnx)."
             },
             "isVisible": true,
             "defaultValue": "false"
@@ -22,6 +22,14 @@
             "id": "razor-class-library",
             "name": {
                 "text": "Create a _Razor Class Library (RCL) to abstract Razor components."
+            },
+            "isVisible": true,
+            "defaultValue": "false"
+        },
+        {
+            "id": "include-mvvm-toolkit",
+            "name": {
+                "text": "Add CommunityToolkit.Mvvm (aka Microsoft MV_VM Toolkit) NuGet package reference."
             },
             "isVisible": true,
             "defaultValue": "false"
