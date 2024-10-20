@@ -43,6 +43,8 @@ else
 	protected override async Task OnInitializedAsync()
 	{
 		tableStyle = "table";
+		// Simulate a network delay ...
+		await Task.Delay(500);
 		forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
 	}
 }

@@ -11,5 +11,6 @@ public partial class App : Application
     public App()
     {
         Init();
+        InitializeComponent();
     }
 }
