@@ -257,6 +257,12 @@
                     "exclude": [
                         "Imports.cs"
                     ]
+                },
+                {
+                    "condition": "(RazorLib && AddMvvmToolkit)",
+                    "rename": {
+                        "Imports.cs": "BlazorWinForms.1/Imports.cs"
+                    }
                 }
             ]
         }

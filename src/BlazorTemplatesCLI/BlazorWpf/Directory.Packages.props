@@ -4,24 +4,24 @@
     </PropertyGroup>
     <ItemGroup>
         <!--#if (Net9)-->
-        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="9.0.0-rc.1.24452.1" />
-        <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="9.0.0-rc.1.24453.9" />
-        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="9.0.0-rc.1.24431.7" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="9.0.0-rc.2.24474.3" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="9.0.0-rc.2.24503.2" />
+        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="9.0.0-rc.2.24473.5" />
         <!--#elif (Net8)-->
-        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="8.0.8" />
-        <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="8.0.80" />
-        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="8.0.10" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="8.0.92" />
+        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
         <!--#elif (Net7)-->
         <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="7.0.20" />
         <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="7.0.101" />
         <PackageVersion Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
         <!--#else-->
-        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="6.0.33" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="6.0.35" />
         <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="6.0.553" />
         <PackageVersion Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
         <!--#endif-->
         <!--#if (AddMvvmToolkit)-->
-        <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.3.1" />
+        <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.3.2" />
         <!--#endif-->
     </ItemGroup>
 </Project>
