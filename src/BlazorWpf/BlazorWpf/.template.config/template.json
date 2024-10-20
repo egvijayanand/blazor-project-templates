@@ -263,7 +263,7 @@
                 {
                     "condition": "(RazorLib && AddMvvmToolkit)",
                     "rename": {
-                        "Imports.cs": "BlazorWinForms.1/Imports.cs"
+                        "Imports.cs": "BlazorWpf.1/Imports.cs"
                     }
                 }
             ]
