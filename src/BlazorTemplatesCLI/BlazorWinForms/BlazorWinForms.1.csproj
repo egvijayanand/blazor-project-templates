@@ -36,17 +36,11 @@
         <!--#endif-->
         <!--#else-->
         <!--#if (Net9)-->
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="9.*-*" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.*-*" />
-        <!--#elif (Net8)-->
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="9.*" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.*" />
+        <!--#else-->
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="8.*" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.*" />
-        <!--#elif (Net7)-->
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="7.*" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.*" />
-        <!--#else-->
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="6.*" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.*" />
         <!--#endif-->
         <!--#if (AddMvvmToolkit)-->
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.*" />

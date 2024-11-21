@@ -4,7 +4,7 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <PackageType>Template</PackageType>
         <PackageId>VijayAnand.BlazorTemplates</PackageId>
-        <PackageVersion>4.0.0</PackageVersion>
+        <PackageVersion>5.0.0</PackageVersion>
         <Title>Blazor Templates for Windows desktop application (Windows Forms and WPF)</Title>
         <Authors>Vijay Anand E G</Authors>
         <Copyright>Copyright &#169; 2021-2024 Vijay Anand E G</Copyright>

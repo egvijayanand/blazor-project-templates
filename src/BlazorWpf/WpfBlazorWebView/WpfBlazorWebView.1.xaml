@@ -13,16 +13,10 @@
     mc:Ignorable="d">
     <Window.Content>
         <Grid>
-<!--#if (Net8OrLater)-->
             <b:BlazorWebView
                 HostPage="wwwroot/index.html"
                 Services="{StaticResource services}"
                 StartPath="/">
-<!--#else-->
-            <b:BlazorWebView
-                HostPage="wwwroot/index.html"
-                Services="{StaticResource services}">
-<!--#endif-->
                 <b:BlazorWebView.RootComponents>
                     <b:RootComponent
                         Selector="#app"
