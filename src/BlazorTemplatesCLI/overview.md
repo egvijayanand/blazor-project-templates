@@ -19,7 +19,7 @@ dotnet new update
 
 To make use of the template:
 
-By default, this creates a solution that targets `.NET 8`.
+By default, this creates a solution that targets `.NET 9`.
 
 For WinForms:
 
@@ -33,22 +33,14 @@ For WPF:
 dotnet new wpf-blazor
 ```
 
-To target `.NET 6` / `.NET 7` / `.NET 9`, pass the corresponding value (`net6.0` / `net7.0` / `net9.0`) to the framework (`--framework` | `-f`) parameter, example shown below.
+To target `.NET 8`, pass the explicit value (`net8.0`) to the framework (`--framework` | `-f`) parameter, example shown below.
 
 ```shell
-dotnet new winforms-blazor -f net7.0
+dotnet new winforms-blazor -f net8.0
 ```
 
 ```shell
-dotnet new winforms-blazor -f net9.0
-```
-
-```shell
-dotnet new wpf-blazor -f net7.0
-```
-
-```shell
-dotnet new wpf-blazor -f net9.0
+dotnet new wpf-blazor -f net8.0
 ```
 
 Optionally, to abstract Razor components as a separate Razor Class Library (RCL), pass the below parameter while creating the project:
@@ -100,7 +92,7 @@ Both of these templates require a parameter:
 
 Note:
 
-*Ensure the project dependencies are restored before creating Item from these templates.*
+*Make sure the project dependencies are restored before creating a new item from these templates.*
 
 <!--
 *While working with .NET 7 or higher SDK, the namespace parameter in short notation needs to be passed as `-p:na` (i.e., it needs to be prefixed with `-p:`).*

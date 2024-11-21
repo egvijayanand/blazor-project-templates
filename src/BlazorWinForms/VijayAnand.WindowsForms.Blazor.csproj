@@ -4,7 +4,7 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <PackageType>Template</PackageType>
         <PackageId>VijayAnand.WindowsForms.Blazor</PackageId>
-        <PackageVersion>3.0.0</PackageVersion>
+        <PackageVersion>5.0.0</PackageVersion>
         <Title>Windows Forms Blazor App</Title>
         <Authors>Vijay Anand E G</Authors>
         <Copyright>Copyright &#169; 2021-2024 Vijay Anand E G</Copyright>

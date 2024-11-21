@@ -1,7 +1,23 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
 
-What's new in ver. 4.5.0:
+What's new in ver. 5.0.0:
 -------------------------
+Templates updated to support .NET 9 Stable channel release.
+
+The default value for the Framework parameter is now set to net9.0
+
+So by default, the project command generates a .NET 9 project.
+
+dotnet new winforms-blazor -o MyApp
+
+To create a .NET 8 project, explicitly pass the value for the Framework parameter.
+
+dotnet new winforms-blazor -o MyApp -f net8.0
+
+Removed out-of-support versions (.NET 6 and 7).
+
+v4.5.0:
+
 Templates updated to support .NET 9 RC2 release.
 
 v4.4.0:

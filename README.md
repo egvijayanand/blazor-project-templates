@@ -91,48 +91,32 @@ WPF: **wpf-blazor**
 
 So, .NET CLI command to create a new project from your favorite terminal would be as follows:
 
-By default, this creates a project that targets `.NET 8`.
+By default, this creates a project that targets `.NET 9`.
 
-To create projects targeting different supported version of .NET, make use of the Framework parameter (`--framework` | `-f`) that takes `net6.0` / `net7.0` / `net8.0` / `net9.0` as its options (with `net8.0` being the default value, if not specified).
+To create projects targeting different supported version of .NET, make use of the Framework parameter (`--framework` | `-f`) that takes `net8.0` / `net9.0` as its options (with `net9.0` being the default value, if not specified).
 
 WinForms:
 
-Being the default value, framework parameter is optional for `.NET 8`.
+Being the default value, framework parameter is optional for `.NET 9`.
+
+```shell
+dotnet new winforms-blazor
+```
 
 ```shell
 dotnet new winforms-blazor -f net8.0
 ```
 
-```shell
-dotnet new winforms-blazor -f net9.0
-```
-
-```shell
-dotnet new winforms-blazor -f net7.0
-```
-
-```shell
-dotnet new winforms-blazor -f net6.0
-```
-
 WPF:
 
-Being the default value, framework parameter is optional for `.NET 8`.
+Being the default value, framework parameter is optional for `.NET 9`.
+
+```shell
+dotnet new wpf-blazor
+```
 
 ```shell
 dotnet new wpf-blazor -f net8.0
-```
-
-```shell
-dotnet new wpf-blazor -f net9.0
-```
-
-```shell
-dotnet new wpf-blazor -f net7.0
-```
-
-```shell
-dotnet new wpf-blazor -f net6.0
 ```
 
 Optionally, to abstract Razor components as a separate Razor Class Library (RCL), pass the below parameter while creating the project:
@@ -186,7 +170,7 @@ Both of these templates require a parameter:
 
 Note:
 
-*Ensure the project dependencies are restored before creating Item from these templates.*
+*Make sure the project dependencies are restored before creating a new item from these templates.*
 
 <!--
 *While working with .NET 7 or higher SDK, the namespace parameter in short notation needs to be passed as `-p:na` (i.e., it needs to be prefixed with `-p:`).*

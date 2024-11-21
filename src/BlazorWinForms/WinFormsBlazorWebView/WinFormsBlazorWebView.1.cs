@@ -13,9 +13,7 @@ namespace MyApp.Namespace
                 Dock = DockStyle.Fill,
                 HostPage = "wwwroot/index.html",
                 Services = Startup.Services!,
-#if Net8OrLater
                 StartPath = "/"
-#endif
             };
 
             bwv.RootComponents.Add<Main>("#app");
