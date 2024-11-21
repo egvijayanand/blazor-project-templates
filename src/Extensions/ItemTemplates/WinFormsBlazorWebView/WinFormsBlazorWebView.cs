@@ -8,13 +8,14 @@ namespace $rootnamespace$
         {
             InitializeComponent();
 
-            // StartPath property is supported on .NET 8
+            // StartPath property is supported on .NET 8 or later
             // This allows to load a Razor component other than the one defined with default route address of '/'
             var bwv = new BlazorWebView()
             {
                 Dock = DockStyle.Fill,
                 HostPage = "wwwroot/index.html",
-                Services = Startup.Services!
+                Services = Startup.Services!,
+                StartPath = "/"
             };
 
             bwv.RootComponents.Add<Main>("#app");
