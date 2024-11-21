@@ -15,7 +15,8 @@
         <Grid>
             <b:BlazorWebView
                 HostPage="wwwroot/index.html"
-                Services="{StaticResource services}">
+                Services="{StaticResource services}"
+                StartPath="/">
                 <b:BlazorWebView.RootComponents>
                     <b:RootComponent
                         Selector="#app"
