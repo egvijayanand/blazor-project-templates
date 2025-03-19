@@ -1,7 +1,15 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
 
-What's new in ver. 5.0.0.0:
+What's new in ver. 6.0.0.0:
 ---------------------------
+1. Support for creating .NET Blazor Hybrid Window Desktop projects on .NET 10 Previews.
+
+For this, have introduced an additional option to the Framework parameter - .NET 10 (Preview).
+
+Note: The default value for the Framework parameter remains as .NET 9 (STS).
+
+v5.0.0.0:
+
 1. Templates updated to support .NET 9 Stable channel release.
 
 The default value for the Framework parameter is now set to .NET 9 (STS).
