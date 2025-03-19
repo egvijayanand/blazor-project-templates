@@ -8,11 +8,11 @@ namespace VijayAnand.BlazorTemplates
     internal sealed partial class Vsix
     {
         public const string Id = "BlazorTemplates.316c4442-1dec-424e-9a59-e9c637daede6";
-        public const string Name = "Blazor Windows Desktop Templates";
+        public const string Name = "Blazor Hybrid Windows Desktop Templates";
         public const string Description = @"Project template for hosting a Blazor component in Windows Forms and WPF Windows Client Desktop applications.";
         public const string Language = "en-US";
-        public const string Version = "5.0.0.0";
+        public const string Version = "6.0.0.0";
         public const string Author = "Vijay Anand E G";
-        public const string Tags = "Blazor, Desktop, WindowsForms, WinForms, WPF, Windows, Template, BlazorWebView, Hybrid, Razor, Web, GA, .NET MAUI, Client, Modernization, .NET 7, .NET 8, .NET 9, Preview, ARM64, SLNX";
+        public const string Tags = "Blazor, Desktop, WindowsForms, WinForms, WPF, Windows, Template, BlazorWebView, Hybrid, Razor, Web, GA, .NET MAUI, Client, Modernization, .NET 8, .NET 9, .NET 10, Preview, ARM64, SLNX";
     }
 }
