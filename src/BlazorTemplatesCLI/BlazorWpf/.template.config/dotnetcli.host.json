@@ -7,5 +7,9 @@
         "use-slnx": {
             "shortName": "slnx"
         }
-    }
+    },
+    "usageExamples": [
+        "--framework net8.0",
+        "-f net10.0"
+    ]
 }

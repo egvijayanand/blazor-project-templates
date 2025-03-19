@@ -1,7 +1,17 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
 
-What's new in ver. 5.0.0:
+What's new in ver. 6.0.0:
 -------------------------
+Support for creating .NET Blazor Hybrid Window Desktop projects on .NET 10 Previews.
+
+For this, have introduced an additional option to the framework parameter - net10.0
+
+Note: The default value for the framework parameter remains as net9.0, which means to create a project for .NET 10, an explicit value of net10.0 is to be passed.
+
+dotnet new winforms-blazor -o MyApp -f net10.0
+
+v5.0.0:
+
 Templates updated to support .NET 9 Stable channel release.
 
 The default value for the Framework parameter is now set to net9.0

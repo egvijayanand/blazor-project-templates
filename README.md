@@ -93,7 +93,7 @@ So, .NET CLI command to create a new project from your favorite terminal would b
 
 By default, this creates a project that targets `.NET 9`.
 
-To create projects targeting different supported version of .NET, make use of the Framework parameter (`--framework` | `-f`) that takes `net8.0` / `net9.0` as its options (with `net9.0` being the default value, if not specified).
+To create projects targeting different supported/preview version of .NET, make use of the Framework parameter (`--framework` | `-f`) that takes `net8.0` / `net9.0` / `net10.0` as its options (with `net9.0` being the default value, if not specified).
 
 WinForms:
 
@@ -107,6 +107,12 @@ dotnet new winforms-blazor
 dotnet new winforms-blazor -f net8.0
 ```
 
+.NET 10 Preview:
+
+```shell
+dotnet new winforms-blazor -f net10.0
+```
+
 WPF:
 
 Being the default value, framework parameter is optional for `.NET 9`.
@@ -117,6 +123,12 @@ dotnet new wpf-blazor
 
 ```shell
 dotnet new wpf-blazor -f net8.0
+```
+
+.NET 10 Preview:
+
+```shell
+dotnet new wpf-blazor -f net10.0
 ```
 
 Optionally, to abstract Razor components as a separate Razor Class Library (RCL), pass the below parameter while creating the project:
@@ -151,7 +163,7 @@ For WPF:
 dotnet new wpf-blazor -cpm
 ```
 
-Project options can also be used in combination like `-rcl` and `-cpm`.
+Project options can also be used in combination like `-rcl`, `-cpm`, and `-slnx`.
 
 Has support for Item Templates too:
 

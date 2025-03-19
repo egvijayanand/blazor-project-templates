@@ -32,6 +32,11 @@
             "description": "Option to choose the application target framework.",
             "choices": [
                 {
+                    "choice": "net10.0",
+                    "description": "Target .NET 10",
+                    "displayName": ".NET 10 (Preview)"
+                },
+                {
                     "choice": "net9.0",
                     "description": "Target .NET 9",
                     "displayName": ".NET 9 (STS)"
@@ -50,7 +55,7 @@
             "datatype": "bool",
             "defaultValue": "false",
             "description": "Option to use XML-based solution file (slnx).",
-            "displayName": "Option to use XML-based solution file (sln_x)"
+            "displayName": "Option to use _XML-based solution file (slnx)"
         },
         "central-pkg-mgmt": {
             "type": "parameter",
@@ -80,6 +85,10 @@
                 "source": "Framework",
                 "toLower": true
             }
+        },
+        "Net10": {
+            "type": "computed",
+            "value": "(frameworkLower == \"net10.0\")"
         },
         "Net9": {
             "type": "computed",
