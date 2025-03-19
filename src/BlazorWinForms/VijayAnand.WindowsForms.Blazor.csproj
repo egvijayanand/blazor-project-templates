@@ -4,10 +4,10 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <PackageType>Template</PackageType>
         <PackageId>VijayAnand.WindowsForms.Blazor</PackageId>
-        <PackageVersion>5.0.0</PackageVersion>
+        <PackageVersion>6.0.0</PackageVersion>
         <Title>Windows Forms Blazor App</Title>
         <Authors>Vijay Anand E G</Authors>
-        <Copyright>Copyright &#169; 2021-2024 Vijay Anand E G</Copyright>
+        <Copyright>Copyright &#169; 2021-2025 Vijay Anand E G</Copyright>
         <Description>A project for hosting Blazor component in the Windows Forms desktop application.</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <IncludeContentInPack>true</IncludeContentInPack>

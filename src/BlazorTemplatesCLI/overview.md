@@ -33,7 +33,9 @@ For WPF:
 dotnet new wpf-blazor
 ```
 
-To target `.NET 8`, pass the explicit value (`net8.0`) to the framework (`--framework` | `-f`) parameter, example shown below.
+To target `.NET 8` Stable / `.NET 10` Preview, pass the explicit value (`net8.0` / `net10.0`) to the framework (`--framework` | `-f`) parameter, examples shown below.
+
+.NET 8:
 
 ```shell
 dotnet new winforms-blazor -f net8.0
@@ -41,6 +43,16 @@ dotnet new winforms-blazor -f net8.0
 
 ```shell
 dotnet new wpf-blazor -f net8.0
+```
+
+.NET 10 Preview:
+
+```shell
+dotnet new winforms-blazor -f net10.0
+```
+
+```shell
+dotnet new wpf-blazor -f net10.0
 ```
 
 Optionally, to abstract Razor components as a separate Razor Class Library (RCL), pass the below parameter while creating the project:
