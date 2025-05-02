@@ -4,17 +4,17 @@
     </PropertyGroup>
     <ItemGroup>
         <!--#if (Net10)-->
-        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0-preview.2.25164.1" />
-        <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="10.0.0-preview.2.25165.1" />
-        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.0-preview.2.25163.2" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0-preview.3.25172.1" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="10.0.0-preview.3.25208.1" />
+        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.0-preview.3.25171.5" />
         <!--#elif (Net8)-->
-        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="8.0.14" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="8.0.15" />
         <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="8.0.100" />
         <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
         <!--#else-->
-        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="9.0.3" />
-        <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="9.0.50" />
-        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="9.0.3" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.Web" Version="9.0.4" />
+        <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="9.0.60" />
+        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
         <!--#endif-->
         <!--#if (AddMvvmToolkit)-->
         <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.0" />
