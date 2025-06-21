@@ -11,7 +11,7 @@ namespace VijayAnand.BlazorTemplates
         public const string Name = "Blazor Hybrid Windows Desktop Templates";
         public const string Description = @"Project template for hosting a Blazor component in Windows Forms and WPF Windows Client Desktop applications.";
         public const string Language = "en-US";
-        public const string Version = "6.2.0.0";
+        public const string Version = "6.3.0.0";
         public const string Author = "Vijay Anand E G";
         public const string Tags = "Blazor, Desktop, WindowsForms, WinForms, WPF, Windows, Template, BlazorWebView, Hybrid, Razor, Web, GA, .NET MAUI, Client, Modernization, .NET 8, .NET 9, .NET 10, Preview, ARM64, SLNX";
     }
