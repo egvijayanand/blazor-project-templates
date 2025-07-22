@@ -1,10 +1,14 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
 
-What's new in ver. 6.3.0.0:
+What's new in ver. 6.4.0.0:
 ---------------------------
+Templates updated to support .NET 10 Preview 6.
+
+v6.3.0.0:
+
 Templates updated to support .NET 10 Preview 5.
 
-v6.2.0.0
+v6.2.0.0:
 
 Templates updated to support .NET 10 Preview 4.
 
