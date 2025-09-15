@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="BlazorTemplates.316c4442-1dec-424e-9a59-e9c637daede6" Version="6.5.0.0" Language="en-US" Publisher="Vijay Anand E G" />
+        <Identity Id="BlazorTemplates.316c4442-1dec-424e-9a59-e9c637daede6" Version="6.6.0.0" Language="en-US" Publisher="Vijay Anand E G" />
         <DisplayName>Blazor Hybrid Windows Desktop Templates</DisplayName>
         <Description xml:space="preserve">Project template for hosting a Blazor component in Windows Forms and WPF Windows Client Desktop applications.</Description>
         <MoreInfo>https://egvijayanand.in/</MoreInfo>
@@ -10,25 +10,25 @@
         <ReleaseNotes>release-notes.txt</ReleaseNotes>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
-        <Tags>Blazor, Desktop, WindowsForms, WinForms, WPF, Windows, Template, BlazorWebView, Hybrid, Razor, Web, GA, .NET MAUI, Client, Modernization, .NET 8, .NET 9, .NET 10, Preview, ARM64, SLNX</Tags>
+        <Tags>Blazor, Desktop, WindowsForms, WinForms, WPF, Windows, Template, BlazorWebView, Hybrid, Razor, Web, GA, .NET MAUI, Client, Modernization, .NET 8, .NET 9, .NET 10, Preview, ARM64, SLNX, VS2026, Insiders</Tags>
     </Metadata>
     <Installation>
-        <InstallationTarget Version="[17.6, 18.0)" Id="Microsoft.VisualStudio.Community">
+        <InstallationTarget Version="[17.6, 19.0)" Id="Microsoft.VisualStudio.Community">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[17.6, 18.0)" Id="Microsoft.VisualStudio.Pro">
+        <InstallationTarget Version="[17.6, 19.0)" Id="Microsoft.VisualStudio.Pro">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[17.6, 18.0)" Id="Microsoft.VisualStudio.Enterprise">
+        <InstallationTarget Version="[17.6, 19.0)" Id="Microsoft.VisualStudio.Enterprise">
             <ProductArchitecture>amd64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[17.6, 18.0)" Id="Microsoft.VisualStudio.Community">
+        <InstallationTarget Version="[17.6, 19.0)" Id="Microsoft.VisualStudio.Community">
             <ProductArchitecture>arm64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[17.6, 18.0)" Id="Microsoft.VisualStudio.Pro">
+        <InstallationTarget Version="[17.6, 19.0)" Id="Microsoft.VisualStudio.Pro">
             <ProductArchitecture>arm64</ProductArchitecture>
         </InstallationTarget>
-        <InstallationTarget Version="[17.6, 18.0)" Id="Microsoft.VisualStudio.Enterprise">
+        <InstallationTarget Version="[17.6, 19.0)" Id="Microsoft.VisualStudio.Enterprise">
             <ProductArchitecture>arm64</ProductArchitecture>
         </InstallationTarget>
     </Installation>
@@ -37,7 +37,7 @@
     </Prerequisites>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="NuGetTemplates.pkgdef" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" TargetVersion="[17.6, 18.0)" d:TargetPath="ItemTemplates\WinFormsBlazorWebView.zip" />
-        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" TargetVersion="[17.6, 18.0)" d:TargetPath="ItemTemplates\WpfBlazorWebView.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" TargetVersion="[17.6, 19.0)" d:TargetPath="ItemTemplates\WinFormsBlazorWebView.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" TargetVersion="[17.6, 19.0)" d:TargetPath="ItemTemplates\WpfBlazorWebView.zip" />
     </Assets>
 </PackageManifest>
