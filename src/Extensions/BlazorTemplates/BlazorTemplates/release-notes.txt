@@ -1,7 +1,13 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
 
-What's new in ver. 6.5.0.0:
+What's new in ver. 6.6.0.0:
 ---------------------------
+First and foremost, adding support for the Visual Studio 2026 Insiders release.
+
+Templates updated to support .NET 10 RC1.
+
+v6.5.0.0:
+
 Templates updated to support .NET 10 Preview 7.
 
 v6.4.0.0:

@@ -1,4 +1,4 @@
-## Blazor Desktop Project Templates
+## Blazor Hybrid Windows Desktop Project Templates
 
 ### Blazor desktop project templates for Windows Forms and WPF
 
@@ -16,11 +16,13 @@ Join me on [**Developer Thoughts**](https://egvijayanand.in/), an exclusive blog
 
 Now published as Visual Studio 2022 Extension, can be downloaded from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates) and then installed with VSIX installer or even an easy way, install and manage directly from within Visual Studio IDE itself (Extensions -> Manage Extensions or `Alt + X + M` shortcut). To find this extension, search with the `blazorwebview` keyword. Refer to the below screenshot.
 
-The Blazor Desktop Templates Pack VS extension (v4.3.0.0 or higher) is now supported on both **x64 and ARM64** installations of Visual Studio 2022. Happy coding!
+The Blazor Hybrid Windows Desktop Templates VS extension is now supported on both **x64 and ARM64** installations of Visual Studio 2022 (v4.3.0.0 or higher) and 2026 Insiders release (v6.6.0.0). Happy coding!
 
 *Consequently, the minimum supported version of Visual Studio 2022 will be v17.6 or higher.*
 
-![Visual Studio – Manage Extensions (Blazor Desktop Templates in focus)](./images/vs-manage-extensions.png)
+**The v6.6.0.0 VS extension is now compatible with the Visual Studio 2026 Insiders release v18.0.0**
+
+![Visual Studio – Manage Extensions (Blazor Hybrid Windows Desktop Templates in focus)](./images/vs-manage-extensions.png)
 
 For CLI users, commands to install the project template:
 
