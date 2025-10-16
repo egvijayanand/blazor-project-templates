@@ -1,5 +1,5 @@
 ﻿@*#if (RazorLib)*@
-<Router AppAssembly="@GetType().Assembly" AdditionalAssemblies="new[] { typeof(Counter).Assembly }">
+<Router AppAssembly="@GetType().Assembly" AdditionalAssemblies="[typeof(Counter).Assembly]">
 @*#else*@
 <Router AppAssembly="@GetType().Assembly">
 @*#endif*@
