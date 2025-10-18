@@ -1,7 +1,13 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
 
-What's new in ver. 6.6.0.0:
+What's new in ver. 6.7.0.0:
 ---------------------------
+Templates updated to support .NET 10 RC2.
+
+Note: The WPF Blazor Hybrid project targeting .NET 10 no longer supports Windows 7 as a platform target and has been updated to require Windows 10 version 1809 or higher.
+
+v6.6.0.0:
+
 First and foremost, adding support for the Visual Studio 2026 Insiders release.
 
 Templates updated to support .NET 10 RC1.
