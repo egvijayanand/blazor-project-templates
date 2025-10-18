@@ -2,7 +2,11 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
+        <!--#if (Net10OrLater)-->
+        <TargetFramework>DOTNET_TFM-windows10.0.17763.0</TargetFramework>
+        <!--#else-->
         <TargetFramework>DOTNET_TFM-windows7.0</TargetFramework>
+        <!--#endif-->
         <OutputType>WinExe</OutputType>
         <UseWPF>true</UseWPF>
         <!--#if (NonWindows)-->

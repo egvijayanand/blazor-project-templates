@@ -98,6 +98,10 @@
             "type": "computed",
             "value": "(frameworkLower == \"net8.0\")"
         },
+        "Net10OrLater": {
+            "type": "computed",
+            "value": "(Net10)"
+        },
         "enable-windows-targeting": {
             "type": "parameter",
             "datatype": "bool",
