@@ -16,11 +16,11 @@ Join me on [**Developer Thoughts**](https://egvijayanand.in/), an exclusive blog
 
 Now published as Visual Studio 2022 Extension, can be downloaded from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=egvijayanand.blazor-desktop-templates) and then installed with VSIX installer or even an easy way, install and manage directly from within Visual Studio IDE itself (Extensions -> Manage Extensions or `Alt + X + M` shortcut). To find this extension, search with the `blazorwebview` keyword. Refer to the below screenshot.
 
-The Blazor Hybrid Windows Desktop Templates VS extension is now supported on both **x64 and ARM64** installations of Visual Studio 2022 (v4.3.0.0 or higher) and 2026 Insiders release (v6.6.0.0). Happy coding!
+The Blazor Hybrid Windows Desktop Templates VS extension is now supported on both **x64 and ARM64** installations of Visual Studio 2022 (v4.3 or higher) and 2026 (v6.6 or higher). Happy coding!
 
 *Consequently, the minimum supported version of Visual Studio 2022 will be v17.6 or higher.*
 
-**The v6.6.0.0 VS extension is now compatible with the Visual Studio 2026 Insiders release v18.0.0**
+**The v6.6 or higher VS extension is now compatible with the Visual Studio 2026 release v18.0.0**
 
 ![Visual Studio – Manage Extensions (Blazor Hybrid Windows Desktop Templates in focus)](./images/vs-manage-extensions.png)
 
@@ -57,9 +57,19 @@ And from [v4.3.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.3.
 
   Introduces support for the new, simplified, and easily understandable XML-based solution file format.
 
-  This would be an explicit option since the SLNX feature is currently in the preview stage and is only supported on VS2022.
+  `-slnx` | `--use-slnx` - Default value is `true` (from `v7.0.0` onwards).
 
-  `-slnx` | `--use-slnx` - Default value is `false`.
+  To work with the classic SLN format, override the default value:
+
+  ```shell
+  dotnet new winforms-blazor -o MyApp -slnx:false
+  ```
+
+  ```shell
+  dotnet new wpf-blazor -o MyApp -slnx:false
+  ```
+
+  In template packs before v7.0.0, this parameter is to be specified explicitly:
 
   ```shell
   dotnet new winforms-blazor -o MyApp -slnx
@@ -93,44 +103,48 @@ WPF: **wpf-blazor**
 
 So, .NET CLI command to create a new project from your favorite terminal would be as follows:
 
-By default, this creates a project that targets `.NET 9`.
+By default, this creates a project that targets `.NET 10`.
 
-To create projects targeting different supported/preview version of .NET, make use of the Framework parameter (`--framework` | `-f`) that takes `net8.0` / `net9.0` / `net10.0` as its options (with `net9.0` being the default value, if not specified).
+To create projects targeting different supported/preview version of .NET, make use of the Framework parameter (`--framework` | `-f`) that takes `net8.0` / `net9.0` / `net10.0` as its options (with `net10.0` being the default value, if not specified).
 
 WinForms:
 
-Being the default value, framework parameter is optional for `.NET 9`.
+Being the default value, framework parameter is optional for `.NET 10`.
 
 ```shell
 dotnet new winforms-blazor
 ```
 
+.NET 8:
+
 ```shell
 dotnet new winforms-blazor -f net8.0
 ```
 
-.NET 10 Preview:
+.NET 9:
 
 ```shell
-dotnet new winforms-blazor -f net10.0
+dotnet new winforms-blazor -f net9.0
 ```
 
 WPF:
 
-Being the default value, framework parameter is optional for `.NET 9`.
+Being the default value, framework parameter is optional for `.NET 10`.
 
 ```shell
 dotnet new wpf-blazor
 ```
 
+.NET 8:
+
 ```shell
 dotnet new wpf-blazor -f net8.0
 ```
 
-.NET 10 Preview:
+.NET 9:
 
 ```shell
-dotnet new wpf-blazor -f net10.0
+dotnet new wpf-blazor -f net9.0
 ```
 
 Optionally, to abstract Razor components as a separate Razor Class Library (RCL), pass the below parameter while creating the project:

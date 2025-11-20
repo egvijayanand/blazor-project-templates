@@ -1,7 +1,31 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
 
-What's new in ver. 6.7.0:
+What's new in ver. 7.0.0:
 -------------------------
+1. Templates updated to support .NET 10 GA.
+
+2. The default Framework value is now set to net10.0 to natively support .NET 10 (LTS).
+
+dotnet new winforms-blazor -o MyApp
+
+dotnet new wpf-blazor -o MyApp
+
+When creating a .NET 8 or 9 project, an explicit value for the Framework parameter is required.
+
+dotnet new winforms-blazor -o MyApp -f net9.0
+
+dotnet new wpf-blazor -o MyApp -f net9.0
+
+3. By default, the solution file is created in the SLNX format.
+
+To work with the classic SLN format, override the default value.
+
+dotnet new winforms-blazor -o MyApp -slnx:false
+
+dotnet new wpf-blazor -o MyApp -slnx:false
+
+v6.7.0:
+
 Templates updated to support .NET 10 RC2.
 
 Note: The WPF Blazor Hybrid project targeting .NET 10 no longer supports Windows 7 as a platform target and has been updated to require Windows 10 version 1809 or higher.
