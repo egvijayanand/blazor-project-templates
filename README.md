@@ -1,6 +1,4 @@
-## Blazor Hybrid Windows Desktop Project Templates
-
-### Blazor desktop project templates for Windows Forms and WPF
+## Blazor Hybrid Windows Forms and WPF Desktop Project Templates
 
 |App Model|Stable Channel|Preview Channel|
 |:---:|:---:|:---:|
@@ -51,7 +49,9 @@ dotnet new update --check-only
 dotnet new update
 ```
 
-And from [v4.3.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.3.0) of the template package, support for XML-based solution file (slnx) format.
+### What's New
+
+And from [v4.3.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.3.0), support for XML-based solution file (slnx) format.
 
 * SLNX Solution File Format (Short notation: `-slnx`):
 
@@ -69,7 +69,7 @@ And from [v4.3.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.3.
   dotnet new wpf-blazor -o MyApp -slnx:false
   ```
 
-  In template packs before v7.0.0, this parameter is to be specified explicitly:
+  When using template packs prior to v7.0.0, this parameter must be specified explicitly:
 
   ```shell
   dotnet new winforms-blazor -o MyApp -slnx
@@ -79,7 +79,7 @@ And from [v4.3.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.3.
   dotnet new wpf-blazor -o MyApp -slnx
   ```
 
-And from [v4.4.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.4.0) of the template package, support for adding a reference to the MVVM toolkit.
+And from [v4.4.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.4.0), support for adding a reference to the MVVM toolkit.
 
 * Include MVVM Toolkit (Short notation: `-imt`):
 
@@ -95,7 +95,17 @@ And from [v4.4.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.4.
   dotnet new wpf-blazor -o MyApp -imt
   ```
 
-#### Project names referenced by these templates:
+And from [v4.4.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.4.0), support for adding a reference to the MVVM toolkit.
+
+And from [v5.0.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/5.0.0), support for .NET 9 GA.
+
+And from [v6.0.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/6.0.0), support for .NET 10 Previews.
+
+And from [v7.0.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/7.0.0), support for .NET 10 GA.
+
+And from [v8.0.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/8.0.0), support for .NET 11 Previews.
+
+### Project Templates
 
 Windows Forms: **winforms-blazor**
 
@@ -103,9 +113,9 @@ WPF: **wpf-blazor**
 
 So, .NET CLI command to create a new project from your favorite terminal would be as follows:
 
-By default, this creates a project that targets `.NET 10`.
+By default, this creates a project that targets `.NET 10`, the latest stable release channel.
 
-To create projects targeting different supported/preview version of .NET, make use of the Framework parameter (`--framework` | `-f`) that takes `net8.0` / `net9.0` / `net10.0` as its options (with `net10.0` being the default value, if not specified).
+To create projects targeting different supported/preview version of .NET, make use of the Framework parameter (`--framework` | `-f`) that takes `net8.0` / `net9.0` / `net10.0` / `net11.0` as its options (with `net10.0` being the default value, if not specified).
 
 WinForms:
 
@@ -127,6 +137,12 @@ dotnet new winforms-blazor -f net8.0
 dotnet new winforms-blazor -f net9.0
 ```
 
+.NET 11 Preview:
+
+```shell
+dotnet new winforms-blazor -f net11.0
+```
+
 WPF:
 
 Being the default value, framework parameter is optional for `.NET 10`.
@@ -146,6 +162,14 @@ dotnet new wpf-blazor -f net8.0
 ```shell
 dotnet new wpf-blazor -f net9.0
 ```
+
+.NET 11 Preview:
+
+```shell
+dotnet new wpf-blazor -f net11.0
+```
+
+#### Project Options
 
 Optionally, to abstract Razor components as a separate Razor Class Library (RCL), pass the below parameter while creating the project:
 
@@ -181,6 +205,8 @@ dotnet new wpf-blazor -cpm
 
 Project options can also be used in combination like `-rcl`, `-cpm`, and `-slnx`.
 
+### Item Templates
+
 Has support for Item Templates too:
 
 * Windows Form with BlazorWebView
@@ -190,19 +216,11 @@ Has support for Item Templates too:
 
 Both of these templates require a parameter:
 
-* `-n` | `--name` - The Name of the Item to create
-
-<!--
-* `-na` | `--namespace` - The Namespace for the Item to create
--->
+* `-n` | `--name` - The Name of the Item to create,
 
 Note:
 
 *Make sure the project dependencies are restored before creating a new item from these templates.*
-
-<!--
-*While working with .NET 7 or higher SDK, the namespace parameter in short notation needs to be passed as `-p:na` (i.e., it needs to be prefixed with `-p:`).*
--->
 
 ```shell
 dotnet new winforms-bwv -n MyForm
@@ -224,18 +242,10 @@ https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section
 
 Or can easily be installed with [Maui Check](https://github.com/Redth/dotnet-maui-check) tool.
 
-#### Templates within Visual Studio
+### Templates within Visual Studio
 
 After installing the CLI template, optionally, this can be made available in the `New Project` dialog within Visual Studio for an integrated experience.
 
 > **Pro Tip:** Search/Filter with the **Blazor** keyword to quickly locate these template in the VS _Create Project_ dialog.
 
 ![Blazor Desktop Project Templates within Visual Studio 2022](./images/blazor-desktop-templates.png)
-
-<!--
-Users on VS2019 (ver. 16.8+) need to enable the option as shown in the below screenshot (Tools -> Options / `Alt + T + O`) and then restart the Visual Studio instance for this to take effect.
-
-_And in case of Visual Studio 2022, the option of listing the installed .NET CLI templates within IDE is enabled by default._
-
-![CLI Project Templates within Visual Studio 2019](./images/cli-templates-option-enable.png)
--->

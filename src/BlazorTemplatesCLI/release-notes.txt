@@ -1,7 +1,19 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on .NET MAUI and Blazor.
 
-What's new in ver. 7.0.0:
+What's new in ver. 8.0.0:
 -------------------------
+Support for creating Blazor Hybrid Window Desktop projects on .NET 11 Previews.
+
+For this, have introduced an additional option to the framework parameter - net11.0
+
+Note: The default value for the framework parameter is net10.0, meaning that to create a project for .NET 11, you must explicitly pass the value net11.0.
+
+dotnet new winforms-blazor -o MyApp -f net11.0
+
+dotnet new wpf-blazor -o MyApp -f net11.0
+
+v7.0.0:
+
 1. Templates updated to support .NET 10 GA.
 
 2. The default Framework value is now set to net10.0 to natively support .NET 10 (LTS).

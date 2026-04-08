@@ -1,3 +1,5 @@
+### Blazor Hybrid WPF Project Template
+
 A project template for hosting the Blazor component in the WPF desktop application.
 
 To install the template:
@@ -8,13 +10,13 @@ dotnet new install VijayAnand.Wpf.Blazor
 
 To make use of the template:
 
-By default, this creates a solution that targets `.NET 10`.
+By default, this creates a solution that targets `.NET 10`, the latest stable release channel.
 
 ```shell
 dotnet new wpf-blazor
 ```
 
-To target `.NET 8` or `.NET 9`, pass the explicit value (`net8.0` / `net9.0`) to the framework (`--framework` | `-f`) parameter, examples shown below.
+To target `.NET 8`, `.NET 9`, or `.NET 11` (Preview), pass the explicit value (`net8.0` / `net9.0` / `net11.0`) to the Framework (`--framework` | `-f`) parameter, examples shown below.
 
 ```shell
 dotnet new wpf-blazor -f net8.0
@@ -22,6 +24,10 @@ dotnet new wpf-blazor -f net8.0
 
 ```shell
 dotnet new wpf-blazor -f net9.0
+```
+
+```shell
+dotnet new wpf-blazor -f net11.0
 ```
 
 Optionally, to abstract Razor components as a separate Razor Class Library (RCL), pass the below parameter while creating the project:
@@ -47,19 +53,11 @@ Has support for Item Template too:
 
 It requires a parameter:
 
-* `-n` | `--name` - The Name of the Item to create
-
-<!--
-* `-na` | `--namespace` - The Namespace for the Item to create
--->
+* `-n` | `--name` - The Name of the Item to create.
 
 Note:
 
 *Make sure the project dependencies are restored before creating a new item from these templates.*
-
-<!--
-*While working with .NET 7 or higher SDK, the namespace parameter in short notation needs to be passed as `-p:na` (i.e., it needs to be prefixed with `-p:`).*
--->
 
 ```shell
 dotnet new wpf-bwv -n MyWindow

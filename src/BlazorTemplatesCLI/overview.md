@@ -1,4 +1,4 @@
-### Blazor desktop project template
+### Blazor Hybrid Windows Forms and WPF Project Templates
 
 A project template for hosting the Blazor component in the Windows Forms and WPF desktop application.
 
@@ -19,7 +19,7 @@ dotnet new update
 
 To make use of the template:
 
-By default, this creates a solution that targets `.NET 10`.
+By default, this creates a solution that targets `.NET 10`, the latest stable release channel.
 
 For WinForms:
 
@@ -33,7 +33,7 @@ For WPF:
 dotnet new wpf-blazor
 ```
 
-To target `.NET 8` or `.NET 9`, pass the explicit value (`net8.0` / `net9.0`) to the framework (`--framework` | `-f`) parameter, examples shown below.
+To target `.NET 8`, `.NET 9`, or `.NET 11` (Preview), pass the explicit value (`net8.0` / `net9.0` / `net11.0`) to the Framework (`--framework` | `-f`) parameter, examples shown below.
 
 .NET 8:
 
@@ -53,6 +53,16 @@ dotnet new winforms-blazor -f net9.0
 
 ```shell
 dotnet new wpf-blazor -f net9.0
+```
+
+.NET 11 Preview:
+
+```shell
+dotnet new winforms-blazor -f net11.0
+```
+
+```shell
+dotnet new wpf-blazor -f net11.0
 ```
 
 Optionally, to abstract Razor components as a separate Razor Class Library (RCL), pass the below parameter while creating the project:
@@ -96,19 +106,11 @@ Has support for Item Templates too:
 
 Both of these templates require a parameter:
 
-* `-n` | `--name` - The Name of the Item to create
-
-<!--
-* `-na` | `--namespace` - The Namespace for the Item to create
--->
+* `-n` | `--name` - The Name of the Item to create.
 
 Note:
 
 *Make sure the project dependencies are restored before creating a new item from these templates.*
-
-<!--
-*While working with .NET 7 or higher SDK, the namespace parameter in short notation needs to be passed as `-p:na` (i.e., it needs to be prefixed with `-p:`).*
--->
 
 ```shell
 dotnet new winforms-bwv -n MyForm
