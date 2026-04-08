@@ -11,7 +11,11 @@
 
         <!-- Project Options -->
         <Nullable>enable</Nullable>
+        <!--#if (Preview)-->
+        <LangVersion>preview</LangVersion>
+        <!--#else-->
         <LangVersion>latest</LangVersion>
+        <!--#endif-->
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>BlazorWinForms._1</RootNamespace>
     </PropertyGroup>
@@ -35,15 +39,12 @@
         <PackageReference Include="CommunityToolkit.Mvvm" />
         <!--#endif-->
         <!--#else-->
-        <!--#if (Net9)-->
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="9.*" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.*" />
-        <!--#elif (Net8)-->
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="8.*" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.*" />
+        <!--#if (Preview)-->
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="PKG_VERSION-*" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="PKG_VERSION-*" />
         <!--#else-->
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="10.*" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.*" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="PKG_VERSION" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="PKG_VERSION" />
         <!--#endif-->
         <!--#if (AddMvvmToolkit)-->
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.*" />
