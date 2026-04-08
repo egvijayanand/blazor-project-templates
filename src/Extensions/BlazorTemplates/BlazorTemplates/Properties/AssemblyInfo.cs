@@ -18,5 +18,5 @@ using VijayAnand.BlazorTemplates;
 
 namespace System.Runtime.CompilerServices
 {
-    public class IsExternalInit { }
+    internal sealed class IsExternalInit;
 }
