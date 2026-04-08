@@ -1,7 +1,17 @@
 Join me on Developer Thoughts (https://egvijayanand.in/), an exclusive blog for articles on Xamarin.Forms, .NET MAUI and Blazor.
 
-What's new in ver. 7.0.0.0:
+What's new in ver. 8.0.0.0:
 ---------------------------
+Templates updated to support .NET 11 Previews.
+
+The Framework parameter defaults to .NET 10 (LTS), the latest stable release channel.
+
+So by default, the project command generates a .NET 10 project.
+
+To create a .NET 8, .NET 9, or .NET 11 project, set the Framework parameter to .NET 8 (LTS), .NET 9 (STS), or .NET 11 (Preview), accordingly.
+
+v7.0.0.0:
+
 Templates updated to support .NET 10 GA.
 
 The default value for the Framework parameter is now set to .NET 10 (LTS).
