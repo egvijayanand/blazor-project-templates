@@ -95,8 +95,6 @@ And from [v4.4.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.4.
   dotnet new wpf-blazor -o MyApp -imt
   ```
 
-And from [v4.4.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/4.4.0), support for adding a reference to the MVVM toolkit.
-
 And from [v5.0.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/5.0.0), support for .NET 9 GA.
 
 And from [v6.0.0](https://www.nuget.org/packages/VijayAnand.BlazorTemplates/6.0.0), support for .NET 10 Previews.
